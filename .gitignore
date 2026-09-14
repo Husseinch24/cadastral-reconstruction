@@ -4,11 +4,16 @@ venv/
 .env
 
 # Map images — restricted cadastral data
+dataset/
 output/preprocessed/
 output/panorama/
 output/homographies/
 output/edges/
 output/matches/
+output/detected/
+output/debug/
+output/segments/
+output/sift/
 
 # Generated data — derived from restricted maps
 new_pipeline/data/synthetic/
@@ -17,6 +22,12 @@ new_pipeline/data/graphs/
 new_pipeline/data/orientation_results/
 new_pipeline/data/click_matches/
 new_pipeline/data/matches/
+new_pipeline/data/control_points/
+new_pipeline/data/parcel_numbers/
+
+# Private research files
+_Untitled.pdf
+connected images.xlsx
 
 # Trained model weights
 new_pipeline/models/
@@ -35,6 +46,20 @@ __pycache__/
 *.npy
 *.pth
 *.pt
+
+# Selected visual results embedded in README.md
+!new_pipeline/data/orientation_results/
+new_pipeline/data/orientation_results/*
+!new_pipeline/data/orientation_results/pair_47_48_bestwithoutspacing.png
+!new_pipeline/data/orientation_results/pair_46_55_grid.png
+!new_pipeline/data/orientation_results/pair_47_48_grid.png
+!new_pipeline/data/orientation_results/pair_47_48_step1_strips.png
+!new_pipeline/data/orientation_results/pair_47_48_step2_profile.png
+!new_pipeline/data/orientation_results/pair_47_48_step3_align.png
+!new_pipeline/data/orientation_results/pair_47_48_step4_ncc2d.png
+!new_pipeline/data/orientation_results/pair_47_48_step5_density.png
+!new_pipeline/data/orientation_results/pair_47_48_step6_score.png
+!new_pipeline/data/orientation_results/panorama_53b0c35f.png
 
 # System files
 .DS_Store
