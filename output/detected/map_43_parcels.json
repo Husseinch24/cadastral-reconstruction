@@ -1,0 +1,2507 @@
+[
+  {
+    "parcel_id": 0,
+    "detected_number": null,
+    "cx": 7013.68,
+    "cy": 8680.68,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 894.0,
+    "bbox": [
+      6927,
+      8662,
+      178,
+      26
+    ]
+  },
+  {
+    "parcel_id": 1,
+    "detected_number": null,
+    "cx": 519.26,
+    "cy": 8684.02,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1821.0,
+    "bbox": [
+      281,
+      8661,
+      422,
+      27
+    ]
+  },
+  {
+    "parcel_id": 2,
+    "detected_number": null,
+    "cx": 6695.78,
+    "cy": 8680.1,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 2318.0,
+    "bbox": [
+      6502,
+      8659,
+      420,
+      28
+    ]
+  },
+  {
+    "parcel_id": 3,
+    "detected_number": null,
+    "cx": 6249.46,
+    "cy": 8675.13,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1582.5,
+    "bbox": [
+      6100,
+      8649,
+      305,
+      37
+    ]
+  },
+  {
+    "parcel_id": 4,
+    "detected_number": null,
+    "cx": 2809.28,
+    "cy": 8681.12,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 11026.5,
+    "bbox": [
+      1800,
+      8645,
+      1977,
+      43
+    ]
+  },
+  {
+    "parcel_id": 5,
+    "detected_number": null,
+    "cx": 1175.76,
+    "cy": 8447.64,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1027.0,
+    "bbox": [
+      1145,
+      8387,
+      58,
+      133
+    ]
+  },
+  {
+    "parcel_id": 6,
+    "detected_number": null,
+    "cx": 573.12,
+    "cy": 8412.25,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1223.0,
+    "bbox": [
+      500,
+      8374,
+      144,
+      78
+    ]
+  },
+  {
+    "parcel_id": 7,
+    "detected_number": null,
+    "cx": 959.98,
+    "cy": 8382.7,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1093.0,
+    "bbox": [
+      921,
+      8354,
+      80,
+      56
+    ]
+  },
+  {
+    "parcel_id": 8,
+    "detected_number": null,
+    "cx": 368.35,
+    "cy": 8351.95,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 864.0,
+    "bbox": [
+      315,
+      8327,
+      114,
+      63
+    ]
+  },
+  {
+    "parcel_id": 9,
+    "detected_number": null,
+    "cx": 15.93,
+    "cy": 8405.88,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 2007.0,
+    "bbox": [
+      2,
+      8267,
+      77,
+      345
+    ]
+  },
+  {
+    "parcel_id": 10,
+    "detected_number": null,
+    "cx": 557.07,
+    "cy": 8279.73,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 856.5,
+    "bbox": [
+      519,
+      8261,
+      87,
+      32
+    ]
+  },
+  {
+    "parcel_id": 11,
+    "detected_number": null,
+    "cx": 2830.29,
+    "cy": 8341.83,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1973.0,
+    "bbox": [
+      2749,
+      8201,
+      174,
+      301
+    ]
+  },
+  {
+    "parcel_id": 12,
+    "detected_number": null,
+    "cx": 3590.78,
+    "cy": 8251.95,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1079.0,
+    "bbox": [
+      3567,
+      8194,
+      49,
+      112
+    ]
+  },
+  {
+    "parcel_id": 13,
+    "detected_number": null,
+    "cx": 1277.52,
+    "cy": 8169.37,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1152.0,
+    "bbox": [
+      1252,
+      8109,
+      52,
+      132
+    ]
+  },
+  {
+    "parcel_id": 14,
+    "detected_number": null,
+    "cx": 4567.38,
+    "cy": 8143.93,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1281.5,
+    "bbox": [
+      4536,
+      8083,
+      69,
+      114
+    ]
+  },
+  {
+    "parcel_id": 15,
+    "detected_number": null,
+    "cx": 5220.57,
+    "cy": 8088.16,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1181.0,
+    "bbox": [
+      5186,
+      8051,
+      79,
+      63
+    ]
+  },
+  {
+    "parcel_id": 16,
+    "detected_number": null,
+    "cx": 3245.31,
+    "cy": 8253.78,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 3515.0,
+    "bbox": [
+      3097,
+      8044,
+      275,
+      466
+    ]
+  },
+  {
+    "parcel_id": 17,
+    "detected_number": null,
+    "cx": 5264.28,
+    "cy": 8056.11,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 838.5,
+    "bbox": [
+      5245,
+      8021,
+      48,
+      60
+    ]
+  },
+  {
+    "parcel_id": 18,
+    "detected_number": null,
+    "cx": 5324.35,
+    "cy": 8074.01,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 808.5,
+    "bbox": [
+      5311,
+      8019,
+      28,
+      110
+    ]
+  },
+  {
+    "parcel_id": 19,
+    "detected_number": null,
+    "cx": 725.36,
+    "cy": 8032.17,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 914.0,
+    "bbox": [
+      693,
+      8001,
+      71,
+      53
+    ]
+  },
+  {
+    "parcel_id": 20,
+    "detected_number": null,
+    "cx": 1329.93,
+    "cy": 8030.91,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 843.5,
+    "bbox": [
+      1308,
+      7977,
+      42,
+      110
+    ]
+  },
+  {
+    "parcel_id": 21,
+    "detected_number": null,
+    "cx": 948.54,
+    "cy": 7992.28,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 825.0,
+    "bbox": [
+      904,
+      7954,
+      75,
+      61
+    ]
+  },
+  {
+    "parcel_id": 22,
+    "detected_number": null,
+    "cx": 1388.58,
+    "cy": 7992.88,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1323.0,
+    "bbox": [
+      1357,
+      7946,
+      59,
+      91
+    ]
+  },
+  {
+    "parcel_id": 23,
+    "detected_number": null,
+    "cx": 33.56,
+    "cy": 8141.76,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 2446.0,
+    "bbox": [
+      12,
+      7940,
+      97,
+      358
+    ]
+  },
+  {
+    "parcel_id": 24,
+    "detected_number": null,
+    "cx": 2251.35,
+    "cy": 7961.65,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 949.5,
+    "bbox": [
+      2183,
+      7930,
+      123,
+      60
+    ]
+  },
+  {
+    "parcel_id": 25,
+    "detected_number": null,
+    "cx": 1041.22,
+    "cy": 7930.08,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1175.5,
+    "bbox": [
+      1015,
+      7906,
+      59,
+      59
+    ]
+  },
+  {
+    "parcel_id": 26,
+    "detected_number": null,
+    "cx": 1314.8,
+    "cy": 7964.67,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 884.0,
+    "bbox": [
+      1296,
+      7899,
+      43,
+      129
+    ]
+  },
+  {
+    "parcel_id": 27,
+    "detected_number": null,
+    "cx": 2137.53,
+    "cy": 7928.75,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1850.5,
+    "bbox": [
+      2086,
+      7851,
+      128,
+      165
+    ]
+  },
+  {
+    "parcel_id": 28,
+    "detected_number": null,
+    "cx": 4905.71,
+    "cy": 7903.93,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1137.5,
+    "bbox": [
+      4865,
+      7849,
+      84,
+      114
+    ]
+  },
+  {
+    "parcel_id": 29,
+    "detected_number": null,
+    "cx": 4911.32,
+    "cy": 7949.5,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 2235.0,
+    "bbox": [
+      4804,
+      7830,
+      212,
+      233
+    ]
+  },
+  {
+    "parcel_id": 30,
+    "detected_number": null,
+    "cx": 994.5,
+    "cy": 7866.25,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 885.0,
+    "bbox": [
+      945,
+      7824,
+      82,
+      72
+    ]
+  },
+  {
+    "parcel_id": 31,
+    "detected_number": null,
+    "cx": 959.3,
+    "cy": 7847.06,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 880.0,
+    "bbox": [
+      895,
+      7816,
+      100,
+      53
+    ]
+  },
+  {
+    "parcel_id": 32,
+    "detected_number": null,
+    "cx": 1383.25,
+    "cy": 7879.54,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1297.5,
+    "bbox": [
+      1358,
+      7813,
+      53,
+      144
+    ]
+  },
+  {
+    "parcel_id": 33,
+    "detected_number": null,
+    "cx": 5535.93,
+    "cy": 7859.67,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 926.5,
+    "bbox": [
+      5514,
+      7796,
+      40,
+      121
+    ]
+  },
+  {
+    "parcel_id": 34,
+    "detected_number": null,
+    "cx": 641.17,
+    "cy": 7835.96,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1353.5,
+    "bbox": [
+      582,
+      7790,
+      133,
+      105
+    ]
+  },
+  {
+    "parcel_id": 35,
+    "detected_number": null,
+    "cx": 1161.52,
+    "cy": 7865.04,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1807.0,
+    "bbox": [
+      1097,
+      7788,
+      137,
+      119
+    ]
+  },
+  {
+    "parcel_id": 36,
+    "detected_number": null,
+    "cx": 3839.37,
+    "cy": 7821.56,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 910.0,
+    "bbox": [
+      3815,
+      7783,
+      53,
+      77
+    ]
+  },
+  {
+    "parcel_id": 37,
+    "detected_number": null,
+    "cx": 3463.46,
+    "cy": 7897.68,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 2017.5,
+    "bbox": [
+      3388,
+      7775,
+      153,
+      235
+    ]
+  },
+  {
+    "parcel_id": 38,
+    "detected_number": null,
+    "cx": 818.63,
+    "cy": 7761.32,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 979.5,
+    "bbox": [
+      796,
+      7741,
+      60,
+      41
+    ]
+  },
+  {
+    "parcel_id": 39,
+    "detected_number": null,
+    "cx": 1164.6,
+    "cy": 7731.15,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1024.5,
+    "bbox": [
+      1110,
+      7708,
+      95,
+      42
+    ]
+  },
+  {
+    "parcel_id": 40,
+    "detected_number": null,
+    "cx": 1392.57,
+    "cy": 7765.46,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 852.0,
+    "bbox": [
+      1354,
+      7703,
+      72,
+      129
+    ]
+  },
+  {
+    "parcel_id": 41,
+    "detected_number": null,
+    "cx": 1230.13,
+    "cy": 7744.13,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1095.5,
+    "bbox": [
+      1206,
+      7698,
+      56,
+      77
+    ]
+  },
+  {
+    "parcel_id": 42,
+    "detected_number": null,
+    "cx": 524.41,
+    "cy": 7732.15,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1190.5,
+    "bbox": [
+      509,
+      7684,
+      43,
+      102
+    ]
+  },
+  {
+    "parcel_id": 43,
+    "detected_number": null,
+    "cx": 3842.37,
+    "cy": 7702.41,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1872.5,
+    "bbox": [
+      3704,
+      7667,
+      300,
+      68
+    ]
+  },
+  {
+    "parcel_id": 44,
+    "detected_number": null,
+    "cx": 891.3,
+    "cy": 7673.29,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 865.5,
+    "bbox": [
+      854,
+      7648,
+      65,
+      55
+    ]
+  },
+  {
+    "parcel_id": 45,
+    "detected_number": null,
+    "cx": 760.97,
+    "cy": 7695.03,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1588.5,
+    "bbox": [
+      726,
+      7641,
+      63,
+      98
+    ]
+  },
+  {
+    "parcel_id": 46,
+    "detected_number": null,
+    "cx": 1814.07,
+    "cy": 7670.06,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1326.0,
+    "bbox": [
+      1790,
+      7621,
+      54,
+      103
+    ]
+  },
+  {
+    "parcel_id": 47,
+    "detected_number": null,
+    "cx": 4456.95,
+    "cy": 7730.81,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 2443.0,
+    "bbox": [
+      4346,
+      7610,
+      231,
+      249
+    ]
+  },
+  {
+    "parcel_id": 48,
+    "detected_number": null,
+    "cx": 4174.04,
+    "cy": 7636.37,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 2341.0,
+    "bbox": [
+      4006,
+      7602,
+      317,
+      71
+    ]
+  },
+  {
+    "parcel_id": 49,
+    "detected_number": null,
+    "cx": 809.56,
+    "cy": 7610.27,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 828.0,
+    "bbox": [
+      765,
+      7595,
+      83,
+      27
+    ]
+  },
+  {
+    "parcel_id": 50,
+    "detected_number": null,
+    "cx": 1456.54,
+    "cy": 7743.36,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 2421.0,
+    "bbox": [
+      1421,
+      7592,
+      73,
+      291
+    ]
+  },
+  {
+    "parcel_id": 51,
+    "detected_number": null,
+    "cx": 1064.34,
+    "cy": 7629.26,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1179.5,
+    "bbox": [
+      1011,
+      7585,
+      91,
+      70
+    ]
+  },
+  {
+    "parcel_id": 52,
+    "detected_number": null,
+    "cx": 882.09,
+    "cy": 7618.05,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1339.0,
+    "bbox": [
+      839,
+      7574,
+      71,
+      91
+    ]
+  },
+  {
+    "parcel_id": 53,
+    "detected_number": null,
+    "cx": 5477.38,
+    "cy": 7658.58,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1834.5,
+    "bbox": [
+      5407,
+      7572,
+      135,
+      181
+    ]
+  },
+  {
+    "parcel_id": 54,
+    "detected_number": null,
+    "cx": 1200.27,
+    "cy": 7578.82,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 2008.5,
+    "bbox": [
+      1130,
+      7545,
+      166,
+      58
+    ]
+  },
+  {
+    "parcel_id": 55,
+    "detected_number": null,
+    "cx": 1323.51,
+    "cy": 7582.95,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1110.0,
+    "bbox": [
+      1261,
+      7534,
+      102,
+      79
+    ]
+  },
+  {
+    "parcel_id": 56,
+    "detected_number": null,
+    "cx": 421.32,
+    "cy": 7525.42,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1039.5,
+    "bbox": [
+      388,
+      7488,
+      85,
+      87
+    ]
+  },
+  {
+    "parcel_id": 57,
+    "detected_number": null,
+    "cx": 905.81,
+    "cy": 7490.16,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1412.5,
+    "bbox": [
+      838,
+      7461,
+      125,
+      51
+    ]
+  },
+  {
+    "parcel_id": 58,
+    "detected_number": null,
+    "cx": 1066.54,
+    "cy": 7466.37,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1132.0,
+    "bbox": [
+      1037,
+      7439,
+      62,
+      56
+    ]
+  },
+  {
+    "parcel_id": 59,
+    "detected_number": null,
+    "cx": 2420.34,
+    "cy": 7760.68,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 7567.0,
+    "bbox": [
+      2151,
+      7432,
+      565,
+      675
+    ]
+  },
+  {
+    "parcel_id": 60,
+    "detected_number": null,
+    "cx": 398.13,
+    "cy": 7445.9,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1006.5,
+    "bbox": [
+      375,
+      7419,
+      49,
+      57
+    ]
+  },
+  {
+    "parcel_id": 61,
+    "detected_number": null,
+    "cx": 835.75,
+    "cy": 7458.85,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 924.0,
+    "bbox": [
+      815,
+      7417,
+      42,
+      84
+    ]
+  },
+  {
+    "parcel_id": 62,
+    "detected_number": null,
+    "cx": 5461.74,
+    "cy": 7489.18,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1576.5,
+    "bbox": [
+      5387,
+      7415,
+      160,
+      142
+    ]
+  },
+  {
+    "parcel_id": 63,
+    "detected_number": null,
+    "cx": 5224.49,
+    "cy": 7596.44,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 4427.5,
+    "bbox": [
+      5054,
+      7400,
+      322,
+      407
+    ]
+  },
+  {
+    "parcel_id": 64,
+    "detected_number": null,
+    "cx": 34.49,
+    "cy": 7669.08,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 3699.0,
+    "bbox": [
+      22,
+      7393,
+      50,
+      527
+    ]
+  },
+  {
+    "parcel_id": 65,
+    "detected_number": null,
+    "cx": 801.0,
+    "cy": 7422.18,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1180.5,
+    "bbox": [
+      753,
+      7378,
+      91,
+      74
+    ]
+  },
+  {
+    "parcel_id": 66,
+    "detected_number": null,
+    "cx": 5185.4,
+    "cy": 7571.41,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 4692.5,
+    "bbox": [
+      5012,
+      7367,
+      361,
+      403
+    ]
+  },
+  {
+    "parcel_id": 67,
+    "detected_number": null,
+    "cx": 5499.32,
+    "cy": 7468.13,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 2293.5,
+    "bbox": [
+      5384,
+      7366,
+      239,
+      173
+    ]
+  },
+  {
+    "parcel_id": 68,
+    "detected_number": null,
+    "cx": 337.89,
+    "cy": 7399.57,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1189.0,
+    "bbox": [
+      300,
+      7360,
+      64,
+      86
+    ]
+  },
+  {
+    "parcel_id": 69,
+    "detected_number": null,
+    "cx": 1028.47,
+    "cy": 7396.99,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 899.0,
+    "bbox": [
+      973,
+      7356,
+      89,
+      69
+    ]
+  },
+  {
+    "parcel_id": 70,
+    "detected_number": null,
+    "cx": 957.65,
+    "cy": 7357.02,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1371.5,
+    "bbox": [
+      911,
+      7315,
+      102,
+      73
+    ]
+  },
+  {
+    "parcel_id": 71,
+    "detected_number": null,
+    "cx": 865.52,
+    "cy": 7301.56,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1607.0,
+    "bbox": [
+      823,
+      7265,
+      92,
+      72
+    ]
+  },
+  {
+    "parcel_id": 72,
+    "detected_number": null,
+    "cx": 1157.97,
+    "cy": 7012.0,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1245.5,
+    "bbox": [
+      1089,
+      6965,
+      132,
+      90
+    ]
+  },
+  {
+    "parcel_id": 73,
+    "detected_number": null,
+    "cx": 1825.34,
+    "cy": 7039.08,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 2404.5,
+    "bbox": [
+      1757,
+      6949,
+      137,
+      170
+    ]
+  },
+  {
+    "parcel_id": 74,
+    "detected_number": null,
+    "cx": 32.05,
+    "cy": 7148.53,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 2862.0,
+    "bbox": [
+      20,
+      6890,
+      31,
+      510
+    ]
+  },
+  {
+    "parcel_id": 75,
+    "detected_number": null,
+    "cx": 20.49,
+    "cy": 6782.51,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1071.0,
+    "bbox": [
+      12,
+      6704,
+      26,
+      179
+    ]
+  },
+  {
+    "parcel_id": 76,
+    "detected_number": null,
+    "cx": 5481.28,
+    "cy": 6744.37,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 907.0,
+    "bbox": [
+      5458,
+      6683,
+      58,
+      116
+    ]
+  },
+  {
+    "parcel_id": 77,
+    "detected_number": null,
+    "cx": 1538.01,
+    "cy": 6715.86,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1428.0,
+    "bbox": [
+      1472,
+      6659,
+      141,
+      129
+    ]
+  },
+  {
+    "parcel_id": 78,
+    "detected_number": null,
+    "cx": 1617.25,
+    "cy": 6741.31,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 3836.0,
+    "bbox": [
+      1457,
+      6580,
+      268,
+      318
+    ]
+  },
+  {
+    "parcel_id": 79,
+    "detected_number": null,
+    "cx": 12.71,
+    "cy": 6625.81,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 966.0,
+    "bbox": [
+      2,
+      6540,
+      39,
+      170
+    ]
+  },
+  {
+    "parcel_id": 80,
+    "detected_number": null,
+    "cx": 1392.59,
+    "cy": 6575.12,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 958.0,
+    "bbox": [
+      1341,
+      6505,
+      100,
+      124
+    ]
+  },
+  {
+    "parcel_id": 81,
+    "detected_number": null,
+    "cx": 853.48,
+    "cy": 6515.85,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1442.5,
+    "bbox": [
+      763,
+      6472,
+      182,
+      73
+    ]
+  },
+  {
+    "parcel_id": 82,
+    "detected_number": null,
+    "cx": 771.81,
+    "cy": 6428.61,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1309.0,
+    "bbox": [
+      733,
+      6380,
+      78,
+      84
+    ]
+  },
+  {
+    "parcel_id": 83,
+    "detected_number": null,
+    "cx": 1263.59,
+    "cy": 6405.9,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1222.5,
+    "bbox": [
+      1211,
+      6331,
+      107,
+      153
+    ]
+  },
+  {
+    "parcel_id": 84,
+    "detected_number": null,
+    "cx": 1179.65,
+    "cy": 6288.46,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 846.5,
+    "bbox": [
+      1149,
+      6252,
+      68,
+      80
+    ]
+  },
+  {
+    "parcel_id": 85,
+    "detected_number": null,
+    "cx": 5910.96,
+    "cy": 6247.92,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1190.5,
+    "bbox": [
+      5779,
+      6233,
+      271,
+      28
+    ]
+  },
+  {
+    "parcel_id": 86,
+    "detected_number": null,
+    "cx": 1265.28,
+    "cy": 6311.76,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 2837.5,
+    "bbox": [
+      1158,
+      6173,
+      208,
+      297
+    ]
+  },
+  {
+    "parcel_id": 87,
+    "detected_number": null,
+    "cx": 1050.1,
+    "cy": 6235.8,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1683.0,
+    "bbox": [
+      994,
+      6172,
+      129,
+      118
+    ]
+  },
+  {
+    "parcel_id": 88,
+    "detected_number": null,
+    "cx": 5178.85,
+    "cy": 6981.03,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 13690.0,
+    "bbox": [
+      4829,
+      6153,
+      664,
+      1675
+    ]
+  },
+  {
+    "parcel_id": 89,
+    "detected_number": null,
+    "cx": 830.13,
+    "cy": 5897.57,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 4510.5,
+    "bbox": [
+      652,
+      5760,
+      392,
+      324
+    ]
+  },
+  {
+    "parcel_id": 90,
+    "detected_number": null,
+    "cx": 5535.78,
+    "cy": 5792.85,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1026.0,
+    "bbox": [
+      5506,
+      5740,
+      61,
+      101
+    ]
+  },
+  {
+    "parcel_id": 91,
+    "detected_number": null,
+    "cx": 5912.1,
+    "cy": 5773.97,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1377.0,
+    "bbox": [
+      5892,
+      5720,
+      59,
+      98
+    ]
+  },
+  {
+    "parcel_id": 92,
+    "detected_number": null,
+    "cx": 840.06,
+    "cy": 5968.89,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 6977.0,
+    "bbox": [
+      535,
+      5717,
+      590,
+      508
+    ]
+  },
+  {
+    "parcel_id": 93,
+    "detected_number": null,
+    "cx": 318.8,
+    "cy": 5718.99,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1178.5,
+    "bbox": [
+      253,
+      5691,
+      131,
+      52
+    ]
+  },
+  {
+    "parcel_id": 94,
+    "detected_number": null,
+    "cx": 5853.35,
+    "cy": 5715.66,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1169.0,
+    "bbox": [
+      5837,
+      5673,
+      50,
+      104
+    ]
+  },
+  {
+    "parcel_id": 95,
+    "detected_number": null,
+    "cx": 5803.39,
+    "cy": 5663.76,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1047.0,
+    "bbox": [
+      5790,
+      5629,
+      45,
+      93
+    ]
+  },
+  {
+    "parcel_id": 96,
+    "detected_number": null,
+    "cx": 5592.3,
+    "cy": 5684.55,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1345.0,
+    "bbox": [
+      5562,
+      5629,
+      47,
+      126
+    ]
+  },
+  {
+    "parcel_id": 97,
+    "detected_number": null,
+    "cx": 533.82,
+    "cy": 5582.95,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 2890.0,
+    "bbox": [
+      489,
+      5412,
+      126,
+      322
+    ]
+  },
+  {
+    "parcel_id": 98,
+    "detected_number": null,
+    "cx": 5472.01,
+    "cy": 6277.97,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 24424.0,
+    "bbox": [
+      4860,
+      4692,
+      1203,
+      3121
+    ]
+  },
+  {
+    "parcel_id": 99,
+    "detected_number": null,
+    "cx": 5750.24,
+    "cy": 5388.28,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 12918.5,
+    "bbox": [
+      5488,
+      4637,
+      566,
+      1514
+    ]
+  },
+  {
+    "parcel_id": 100,
+    "detected_number": null,
+    "cx": 480.02,
+    "cy": 4402.12,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 922.0,
+    "bbox": [
+      431,
+      4387,
+      99,
+      31
+    ]
+  },
+  {
+    "parcel_id": 101,
+    "detected_number": null,
+    "cx": 797.86,
+    "cy": 4349.96,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1972.0,
+    "bbox": [
+      691,
+      4328,
+      198,
+      42
+    ]
+  },
+  {
+    "parcel_id": 102,
+    "detected_number": null,
+    "cx": 1031.57,
+    "cy": 4313.12,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1424.0,
+    "bbox": [
+      959,
+      4300,
+      146,
+      31
+    ]
+  },
+  {
+    "parcel_id": 103,
+    "detected_number": null,
+    "cx": 819.55,
+    "cy": 4299.52,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1812.0,
+    "bbox": [
+      724,
+      4283,
+      187,
+      34
+    ]
+  },
+  {
+    "parcel_id": 104,
+    "detected_number": null,
+    "cx": 1095.58,
+    "cy": 4259.48,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1450.5,
+    "bbox": [
+      996,
+      4241,
+      211,
+      42
+    ]
+  },
+  {
+    "parcel_id": 105,
+    "detected_number": null,
+    "cx": 3910.11,
+    "cy": 3919.16,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1096.5,
+    "bbox": [
+      3882,
+      3877,
+      54,
+      87
+    ]
+  },
+  {
+    "parcel_id": 106,
+    "detected_number": null,
+    "cx": 1527.29,
+    "cy": 3919.67,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1463.5,
+    "bbox": [
+      1515,
+      3847,
+      28,
+      151
+    ]
+  },
+  {
+    "parcel_id": 107,
+    "detected_number": null,
+    "cx": 3656.71,
+    "cy": 3840.27,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1820.5,
+    "bbox": [
+      3637,
+      3758,
+      47,
+      169
+    ]
+  },
+  {
+    "parcel_id": 108,
+    "detected_number": null,
+    "cx": 3538.47,
+    "cy": 3832.29,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1945.0,
+    "bbox": [
+      3503,
+      3740,
+      79,
+      172
+    ]
+  },
+  {
+    "parcel_id": 109,
+    "detected_number": null,
+    "cx": 3394.23,
+    "cy": 3751.75,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 2493.0,
+    "bbox": [
+      3368,
+      3681,
+      84,
+      170
+    ]
+  },
+  {
+    "parcel_id": 110,
+    "detected_number": null,
+    "cx": 1360.56,
+    "cy": 3545.7,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 2319.0,
+    "bbox": [
+      1237,
+      3461,
+      245,
+      174
+    ]
+  },
+  {
+    "parcel_id": 111,
+    "detected_number": null,
+    "cx": 5955.21,
+    "cy": 3485.04,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1795.5,
+    "bbox": [
+      5917,
+      3385,
+      94,
+      216
+    ]
+  },
+  {
+    "parcel_id": 112,
+    "detected_number": null,
+    "cx": 5933.75,
+    "cy": 3257.65,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1319.0,
+    "bbox": [
+      5879,
+      3205,
+      116,
+      125
+    ]
+  },
+  {
+    "parcel_id": 113,
+    "detected_number": null,
+    "cx": 1213.63,
+    "cy": 3265.02,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 3355.5,
+    "bbox": [
+      1199,
+      3094,
+      48,
+      331
+    ]
+  },
+  {
+    "parcel_id": 114,
+    "detected_number": null,
+    "cx": 5937.32,
+    "cy": 3140.89,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 2119.0,
+    "bbox": [
+      5910,
+      3032,
+      80,
+      217
+    ]
+  },
+  {
+    "parcel_id": 115,
+    "detected_number": null,
+    "cx": 1023.36,
+    "cy": 3008.94,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1255.5,
+    "bbox": [
+      981,
+      2969,
+      103,
+      88
+    ]
+  },
+  {
+    "parcel_id": 116,
+    "detected_number": null,
+    "cx": 5913.33,
+    "cy": 3060.88,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 2327.0,
+    "bbox": [
+      5865,
+      2923,
+      105,
+      265
+    ]
+  },
+  {
+    "parcel_id": 117,
+    "detected_number": null,
+    "cx": 1348.77,
+    "cy": 2906.8,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 2446.5,
+    "bbox": [
+      1308,
+      2773,
+      66,
+      334
+    ]
+  },
+  {
+    "parcel_id": 118,
+    "detected_number": null,
+    "cx": 6339.55,
+    "cy": 2751.29,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1101.0,
+    "bbox": [
+      6306,
+      2697,
+      75,
+      113
+    ]
+  },
+  {
+    "parcel_id": 119,
+    "detected_number": null,
+    "cx": 6860.47,
+    "cy": 2683.48,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1530.0,
+    "bbox": [
+      6775,
+      2636,
+      181,
+      108
+    ]
+  },
+  {
+    "parcel_id": 120,
+    "detected_number": null,
+    "cx": 6542.38,
+    "cy": 2625.04,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1739.0,
+    "bbox": [
+      6411,
+      2594,
+      269,
+      59
+    ]
+  },
+  {
+    "parcel_id": 121,
+    "detected_number": null,
+    "cx": 1315.9,
+    "cy": 2797.6,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 3863.5,
+    "bbox": [
+      1264,
+      2551,
+      72,
+      496
+    ]
+  },
+  {
+    "parcel_id": 122,
+    "detected_number": null,
+    "cx": 6877.31,
+    "cy": 2577.98,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1541.0,
+    "bbox": [
+      6845,
+      2494,
+      99,
+      156
+    ]
+  },
+  {
+    "parcel_id": 123,
+    "detected_number": null,
+    "cx": 6549.86,
+    "cy": 2510.84,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1814.0,
+    "bbox": [
+      6430,
+      2390,
+      237,
+      201
+    ]
+  },
+  {
+    "parcel_id": 124,
+    "detected_number": null,
+    "cx": 6676.25,
+    "cy": 2489.14,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1642.5,
+    "bbox": [
+      6638,
+      2380,
+      60,
+      222
+    ]
+  },
+  {
+    "parcel_id": 125,
+    "detected_number": null,
+    "cx": 1396.74,
+    "cy": 2372.95,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1067.5,
+    "bbox": [
+      1353,
+      2328,
+      72,
+      77
+    ]
+  },
+  {
+    "parcel_id": 126,
+    "detected_number": null,
+    "cx": 6727.23,
+    "cy": 2432.66,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 2192.5,
+    "bbox": [
+      6656,
+      2296,
+      146,
+      240
+    ]
+  },
+  {
+    "parcel_id": 127,
+    "detected_number": null,
+    "cx": 1061.64,
+    "cy": 2270.43,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 839.5,
+    "bbox": [
+      997,
+      2243,
+      127,
+      40
+    ]
+  },
+  {
+    "parcel_id": 128,
+    "detected_number": null,
+    "cx": 1279.39,
+    "cy": 2277.51,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 5785.5,
+    "bbox": [
+      1253,
+      1992,
+      74,
+      559
+    ]
+  },
+  {
+    "parcel_id": 129,
+    "detected_number": null,
+    "cx": 1030.29,
+    "cy": 2057.43,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 2071.0,
+    "bbox": [
+      997,
+      1981,
+      99,
+      143
+    ]
+  },
+  {
+    "parcel_id": 130,
+    "detected_number": null,
+    "cx": 1049.7,
+    "cy": 1700.37,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1352.5,
+    "bbox": [
+      965,
+      1669,
+      147,
+      82
+    ]
+  },
+  {
+    "parcel_id": 131,
+    "detected_number": null,
+    "cx": 1328.26,
+    "cy": 2147.17,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 9572.5,
+    "bbox": [
+      1294,
+      1638,
+      84,
+      1132
+    ]
+  },
+  {
+    "parcel_id": 132,
+    "detected_number": null,
+    "cx": 6687.03,
+    "cy": 1524.88,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1079.0,
+    "bbox": [
+      6574,
+      1507,
+      228,
+      30
+    ]
+  },
+  {
+    "parcel_id": 133,
+    "detected_number": null,
+    "cx": 5896.49,
+    "cy": 1541.98,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 830.0,
+    "bbox": [
+      5871,
+      1497,
+      55,
+      105
+    ]
+  },
+  {
+    "parcel_id": 134,
+    "detected_number": null,
+    "cx": 1076.4,
+    "cy": 1520.31,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1128.5,
+    "bbox": [
+      1047,
+      1495,
+      67,
+      62
+    ]
+  },
+  {
+    "parcel_id": 135,
+    "detected_number": null,
+    "cx": 2293.8,
+    "cy": 1509.09,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1259.0,
+    "bbox": [
+      2233,
+      1482,
+      114,
+      55
+    ]
+  },
+  {
+    "parcel_id": 136,
+    "detected_number": null,
+    "cx": 1300.9,
+    "cy": 1712.09,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 3817.0,
+    "bbox": [
+      1266,
+      1466,
+      62,
+      521
+    ]
+  },
+  {
+    "parcel_id": 137,
+    "detected_number": null,
+    "cx": 1067.9,
+    "cy": 1435.95,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1118.0,
+    "bbox": [
+      1032,
+      1395,
+      81,
+      76
+    ]
+  },
+  {
+    "parcel_id": 138,
+    "detected_number": null,
+    "cx": 2987.57,
+    "cy": 1273.19,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 804.0,
+    "bbox": [
+      2938,
+      1257,
+      90,
+      36
+    ]
+  },
+  {
+    "parcel_id": 139,
+    "detected_number": null,
+    "cx": 1502.51,
+    "cy": 1246.34,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 835.5,
+    "bbox": [
+      1448,
+      1204,
+      110,
+      79
+    ]
+  },
+  {
+    "parcel_id": 140,
+    "detected_number": null,
+    "cx": 1307.29,
+    "cy": 1270.18,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 3601.0,
+    "bbox": [
+      1288,
+      1111,
+      32,
+      352
+    ]
+  },
+  {
+    "parcel_id": 141,
+    "detected_number": null,
+    "cx": 3473.48,
+    "cy": 1106.77,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1061.0,
+    "bbox": [
+      3416,
+      1078,
+      103,
+      52
+    ]
+  },
+  {
+    "parcel_id": 142,
+    "detected_number": null,
+    "cx": 1267.34,
+    "cy": 1069.4,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 902.5,
+    "bbox": [
+      1226,
+      1047,
+      79,
+      49
+    ]
+  },
+  {
+    "parcel_id": 143,
+    "detected_number": null,
+    "cx": 1726.29,
+    "cy": 1109.65,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1170.0,
+    "bbox": [
+      1711,
+      1034,
+      57,
+      157
+    ]
+  },
+  {
+    "parcel_id": 144,
+    "detected_number": null,
+    "cx": 3686.74,
+    "cy": 1030.91,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1608.5,
+    "bbox": [
+      3610,
+      998,
+      153,
+      66
+    ]
+  },
+  {
+    "parcel_id": 145,
+    "detected_number": null,
+    "cx": 1876.82,
+    "cy": 1027.17,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1355.0,
+    "bbox": [
+      1845,
+      993,
+      75,
+      91
+    ]
+  },
+  {
+    "parcel_id": 146,
+    "detected_number": null,
+    "cx": 1573.58,
+    "cy": 1050.57,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1289.0,
+    "bbox": [
+      1560,
+      976,
+      50,
+      161
+    ]
+  },
+  {
+    "parcel_id": 147,
+    "detected_number": null,
+    "cx": 3009.09,
+    "cy": 879.2,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 819.0,
+    "bbox": [
+      2994,
+      849,
+      38,
+      57
+    ]
+  },
+  {
+    "parcel_id": 148,
+    "detected_number": null,
+    "cx": 3095.39,
+    "cy": 855.31,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 2018.5,
+    "bbox": [
+      3033,
+      800,
+      119,
+      139
+    ]
+  },
+  {
+    "parcel_id": 149,
+    "detected_number": null,
+    "cx": 3197.19,
+    "cy": 812.09,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1343.5,
+    "bbox": [
+      3156,
+      788,
+      67,
+      63
+    ]
+  },
+  {
+    "parcel_id": 150,
+    "detected_number": null,
+    "cx": 4326.19,
+    "cy": 807.72,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 997.5,
+    "bbox": [
+      4271,
+      785,
+      116,
+      53
+    ]
+  },
+  {
+    "parcel_id": 151,
+    "detected_number": null,
+    "cx": 4480.85,
+    "cy": 754.83,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 880.5,
+    "bbox": [
+      4435,
+      726,
+      91,
+      60
+    ]
+  },
+  {
+    "parcel_id": 152,
+    "detected_number": null,
+    "cx": 4648.54,
+    "cy": 705.78,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1088.5,
+    "bbox": [
+      4589,
+      682,
+      114,
+      54
+    ]
+  },
+  {
+    "parcel_id": 153,
+    "detected_number": null,
+    "cx": 4807.53,
+    "cy": 648.66,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 899.5,
+    "bbox": [
+      4760,
+      628,
+      93,
+      51
+    ]
+  },
+  {
+    "parcel_id": 154,
+    "detected_number": null,
+    "cx": 4963.12,
+    "cy": 602.83,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 994.0,
+    "bbox": [
+      4914,
+      580,
+      100,
+      57
+    ]
+  },
+  {
+    "parcel_id": 155,
+    "detected_number": null,
+    "cx": 5112.66,
+    "cy": 551.08,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1145.0,
+    "bbox": [
+      5063,
+      521,
+      102,
+      61
+    ]
+  },
+  {
+    "parcel_id": 156,
+    "detected_number": null,
+    "cx": 4258.5,
+    "cy": 605.75,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 906.5,
+    "bbox": [
+      4245,
+      515,
+      41,
+      165
+    ]
+  },
+  {
+    "parcel_id": 157,
+    "detected_number": null,
+    "cx": 5794.49,
+    "cy": 970.88,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 7926.0,
+    "bbox": [
+      5738,
+      493,
+      165,
+      989
+    ]
+  },
+  {
+    "parcel_id": 158,
+    "detected_number": null,
+    "cx": 4345.72,
+    "cy": 552.14,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 2629.0,
+    "bbox": [
+      4284,
+      474,
+      155,
+      194
+    ]
+  },
+  {
+    "parcel_id": 159,
+    "detected_number": null,
+    "cx": 5318.27,
+    "cy": 485.21,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1226.0,
+    "bbox": [
+      5266,
+      459,
+      108,
+      56
+    ]
+  },
+  {
+    "parcel_id": 160,
+    "detected_number": null,
+    "cx": 5465.9,
+    "cy": 436.81,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1095.5,
+    "bbox": [
+      5422,
+      415,
+      91,
+      51
+    ]
+  },
+  {
+    "parcel_id": 161,
+    "detected_number": null,
+    "cx": 129.26,
+    "cy": 435.64,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1164.0,
+    "bbox": [
+      76,
+      415,
+      110,
+      41
+    ]
+  },
+  {
+    "parcel_id": 162,
+    "detected_number": null,
+    "cx": 4564.67,
+    "cy": 440.94,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1443.0,
+    "bbox": [
+      4482,
+      403,
+      184,
+      102
+    ]
+  },
+  {
+    "parcel_id": 163,
+    "detected_number": null,
+    "cx": 5750.82,
+    "cy": 904.23,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 10084.0,
+    "bbox": [
+      5691,
+      364,
+      191,
+      1131
+    ]
+  },
+  {
+    "parcel_id": 164,
+    "detected_number": null,
+    "cx": 5740.7,
+    "cy": 395.13,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1386.5,
+    "bbox": [
+      5712,
+      315,
+      47,
+      171
+    ]
+  },
+  {
+    "parcel_id": 165,
+    "detected_number": null,
+    "cx": 7221.54,
+    "cy": 249.9,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 1032.0,
+    "bbox": [
+      7176,
+      203,
+      88,
+      91
+    ]
+  },
+  {
+    "parcel_id": 166,
+    "detected_number": null,
+    "cx": 284.18,
+    "cy": 7.75,
+    "confidence": 0.0,
+    "validation": "NO_NUMBER",
+    "area_px": 3993.5,
+    "bbox": [
+      0,
+      0,
+      561,
+      31
+    ]
+  }
+]

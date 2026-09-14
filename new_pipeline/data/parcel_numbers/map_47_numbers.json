@@ -1,0 +1,3249 @@
+[
+  {
+    "parcel_id": 11,
+    "cx": 1072.0,
+    "cy": 362.0,
+    "bbox": [
+      959,
+      227,
+      226,
+      270
+    ],
+    "recognised_number": 2527,
+    "confidence": 1.0,
+    "raw_text": "2527",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 20,
+    "cx": 1470.0,
+    "cy": 267.5,
+    "bbox": [
+      1430,
+      99,
+      80,
+      337
+    ],
+    "recognised_number": 2592,
+    "confidence": 1.0,
+    "raw_text": "2592",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 24,
+    "cx": 1557.5,
+    "cy": 297.5,
+    "bbox": [
+      1508,
+      190,
+      99,
+      215
+    ],
+    "recognised_number": 2569,
+    "confidence": 1.0,
+    "raw_text": "2569",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 31,
+    "cx": 1635.0,
+    "cy": 278.0,
+    "bbox": [
+      1606,
+      215,
+      58,
+      126
+    ],
+    "recognised_number": 2761,
+    "confidence": 1.0,
+    "raw_text": "2761",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 36,
+    "cx": 2140.5,
+    "cy": 287.0,
+    "bbox": [
+      2059,
+      227,
+      163,
+      120
+    ],
+    "recognised_number": 2471,
+    "confidence": 1.0,
+    "raw_text": "2471",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 37,
+    "cx": 2062.0,
+    "cy": 152.5,
+    "bbox": [
+      2008,
+      105,
+      108,
+      95
+    ],
+    "recognised_number": 2716,
+    "confidence": 1.0,
+    "raw_text": "2716",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 62,
+    "cx": 5356.5,
+    "cy": 203.5,
+    "bbox": [
+      5227,
+      76,
+      259,
+      255
+    ],
+    "recognised_number": 2516,
+    "confidence": 1.0,
+    "raw_text": "2516",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 86,
+    "cx": 827.0,
+    "cy": 634.0,
+    "bbox": [
+      799,
+      589,
+      56,
+      90
+    ],
+    "recognised_number": 2605,
+    "confidence": 1.0,
+    "raw_text": "2605",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 96,
+    "cx": 1333.0,
+    "cy": 841.0,
+    "bbox": [
+      1221,
+      789,
+      224,
+      104
+    ],
+    "recognised_number": 2571,
+    "confidence": 1.0,
+    "raw_text": "2571",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 92,
+    "cx": 825.5,
+    "cy": 634.5,
+    "bbox": [
+      798,
+      587,
+      55,
+      95
+    ],
+    "recognised_number": 2560,
+    "confidence": 1.0,
+    "raw_text": "2560",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 95,
+    "cx": 1159.0,
+    "cy": 477.0,
+    "bbox": [
+      1089,
+      384,
+      140,
+      186
+    ],
+    "recognised_number": 2547,
+    "confidence": 1.0,
+    "raw_text": "2547",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 99,
+    "cx": 1382.5,
+    "cy": 450.5,
+    "bbox": [
+      1314,
+      384,
+      137,
+      133
+    ],
+    "recognised_number": 2779,
+    "confidence": 1.0,
+    "raw_text": "2779",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 103,
+    "cx": 1556.0,
+    "cy": 794.5,
+    "bbox": [
+      1450,
+      701,
+      212,
+      187
+    ],
+    "recognised_number": 2711,
+    "confidence": 1.0,
+    "raw_text": "2711",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 105,
+    "cx": 2011.0,
+    "cy": 687.5,
+    "bbox": [
+      1980,
+      625,
+      62,
+      125
+    ],
+    "recognised_number": 2784,
+    "confidence": 1.0,
+    "raw_text": "2784",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 109,
+    "cx": 2223.0,
+    "cy": 829.5,
+    "bbox": [
+      2042,
+      763,
+      362,
+      133
+    ],
+    "recognised_number": 2773,
+    "confidence": 1.0,
+    "raw_text": "2773",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 114,
+    "cx": 2728.0,
+    "cy": 560.5,
+    "bbox": [
+      2696,
+      520,
+      64,
+      81
+    ],
+    "recognised_number": 2771,
+    "confidence": 1.0,
+    "raw_text": "2771",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 121,
+    "cx": 2730.5,
+    "cy": 564.5,
+    "bbox": [
+      2695,
+      521,
+      71,
+      87
+    ],
+    "recognised_number": 2471,
+    "confidence": 1.0,
+    "raw_text": "2471",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 141,
+    "cx": 520.5,
+    "cy": 1079.5,
+    "bbox": [
+      409,
+      963,
+      223,
+      233
+    ],
+    "recognised_number": 2497,
+    "confidence": 1.0,
+    "raw_text": "2497",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 144,
+    "cx": 1214.0,
+    "cy": 1223.5,
+    "bbox": [
+      1148,
+      1172,
+      132,
+      103
+    ],
+    "recognised_number": 2741,
+    "confidence": 1.0,
+    "raw_text": "2741",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 146,
+    "cx": 1163.5,
+    "cy": 1213.5,
+    "bbox": [
+      1048,
+      1162,
+      231,
+      103
+    ],
+    "recognised_number": 2589,
+    "confidence": 1.0,
+    "raw_text": "2589",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 150,
+    "cx": 1341.5,
+    "cy": 845.5,
+    "bbox": [
+      1227,
+      789,
+      229,
+      113
+    ],
+    "recognised_number": 2565,
+    "confidence": 1.0,
+    "raw_text": "2565",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 158,
+    "cx": 1568.0,
+    "cy": 1252.0,
+    "bbox": [
+      1494,
+      1227,
+      148,
+      50
+    ],
+    "recognised_number": 2618,
+    "confidence": 1.0,
+    "raw_text": "2618",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 156,
+    "cx": 1558.5,
+    "cy": 1136.5,
+    "bbox": [
+      1535,
+      1098,
+      47,
+      77
+    ],
+    "recognised_number": 2500,
+    "confidence": 1.0,
+    "raw_text": "2500",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 164,
+    "cx": 1431.0,
+    "cy": 1104.0,
+    "bbox": [
+      1403,
+      1064,
+      56,
+      80
+    ],
+    "recognised_number": 2771,
+    "confidence": 1.0,
+    "raw_text": "2771",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 166,
+    "cx": 1293.0,
+    "cy": 1037.0,
+    "bbox": [
+      1152,
+      950,
+      282,
+      174
+    ],
+    "recognised_number": 2547,
+    "confidence": 1.0,
+    "raw_text": "2547",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 159,
+    "cx": 1396.0,
+    "cy": 1094.0,
+    "bbox": [
+      1346,
+      1051,
+      100,
+      86
+    ],
+    "recognised_number": 2115,
+    "confidence": 1.0,
+    "raw_text": "2115",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 161,
+    "cx": 1411.0,
+    "cy": 863.5,
+    "bbox": [
+      1221,
+      783,
+      380,
+      161
+    ],
+    "recognised_number": 2772,
+    "confidence": 1.0,
+    "raw_text": "2772",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 179,
+    "cx": 2062.0,
+    "cy": 1128.5,
+    "bbox": [
+      1959,
+      1001,
+      206,
+      255
+    ],
+    "recognised_number": 2517,
+    "confidence": 1.0,
+    "raw_text": "2517",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 178,
+    "cx": 2224.0,
+    "cy": 843.0,
+    "bbox": [
+      2039,
+      774,
+      370,
+      138
+    ],
+    "recognised_number": 2441,
+    "confidence": 1.0,
+    "raw_text": "2441",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 182,
+    "cx": 2358.0,
+    "cy": 1225.5,
+    "bbox": [
+      2335,
+      1206,
+      46,
+      39
+    ],
+    "recognised_number": 2580,
+    "confidence": 1.0,
+    "raw_text": "2580",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": true
+  },
+  {
+    "parcel_id": 172,
+    "cx": 1878.0,
+    "cy": 1054.0,
+    "bbox": [
+      1836,
+      1003,
+      84,
+      102
+    ],
+    "recognised_number": 2715,
+    "confidence": 1.0,
+    "raw_text": "2715",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 189,
+    "cx": 2489.5,
+    "cy": 1021.5,
+    "bbox": [
+      2432,
+      983,
+      115,
+      77
+    ],
+    "recognised_number": 2883,
+    "confidence": 1.0,
+    "raw_text": "2883",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 184,
+    "cx": 2701.0,
+    "cy": 1186.5,
+    "bbox": [
+      2658,
+      1138,
+      86,
+      97
+    ],
+    "recognised_number": 2741,
+    "confidence": 1.0,
+    "raw_text": "2741",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 228,
+    "cx": 715.5,
+    "cy": 1375.0,
+    "bbox": [
+      639,
+      1309,
+      153,
+      132
+    ],
+    "recognised_number": 2174,
+    "confidence": 1.0,
+    "raw_text": "2174",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 234,
+    "cx": 1143.5,
+    "cy": 1564.5,
+    "bbox": [
+      1083,
+      1487,
+      121,
+      155
+    ],
+    "recognised_number": 2871,
+    "confidence": 1.0,
+    "raw_text": "2871",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 237,
+    "cx": 1090.5,
+    "cy": 1388.0,
+    "bbox": [
+      1002,
+      1339,
+      177,
+      98
+    ],
+    "recognised_number": 2474,
+    "confidence": 1.0,
+    "raw_text": "2474",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 233,
+    "cx": 1092.5,
+    "cy": 1556.5,
+    "bbox": [
+      1012,
+      1488,
+      161,
+      137
+    ],
+    "recognised_number": 2565,
+    "confidence": 1.0,
+    "raw_text": "2565",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 235,
+    "cx": 1201.5,
+    "cy": 1330.5,
+    "bbox": [
+      1133,
+      1289,
+      137,
+      83
+    ],
+    "recognised_number": 2580,
+    "confidence": 1.0,
+    "raw_text": "2580",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": true
+  },
+  {
+    "parcel_id": 242,
+    "cx": 1413.0,
+    "cy": 1187.5,
+    "bbox": [
+      1285,
+      1152,
+      256,
+      71
+    ],
+    "recognised_number": 2569,
+    "confidence": 1.0,
+    "raw_text": "2569",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 238,
+    "cx": 1094.5,
+    "cy": 1545.0,
+    "bbox": [
+      1037,
+      1497,
+      115,
+      96
+    ],
+    "recognised_number": 2580,
+    "confidence": 1.0,
+    "raw_text": "2580",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": true
+  },
+  {
+    "parcel_id": 236,
+    "cx": 1202.0,
+    "cy": 1582.5,
+    "bbox": [
+      1126,
+      1507,
+      152,
+      151
+    ],
+    "recognised_number": 2437,
+    "confidence": 1.0,
+    "raw_text": "2437",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 247,
+    "cx": 1245.0,
+    "cy": 1231.5,
+    "bbox": [
+      1152,
+      1177,
+      186,
+      109
+    ],
+    "recognised_number": 2614,
+    "confidence": 1.0,
+    "raw_text": "2614",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 246,
+    "cx": 1445.0,
+    "cy": 1212.0,
+    "bbox": [
+      1252,
+      1152,
+      386,
+      120
+    ],
+    "recognised_number": 2741,
+    "confidence": 1.0,
+    "raw_text": "2741",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 245,
+    "cx": 1264.5,
+    "cy": 1352.5,
+    "bbox": [
+      1157,
+      1307,
+      215,
+      91
+    ],
+    "recognised_number": 2410,
+    "confidence": 1.0,
+    "raw_text": "2410",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 257,
+    "cx": 1876.0,
+    "cy": 1379.0,
+    "bbox": [
+      1708,
+      1290,
+      336,
+      178
+    ],
+    "recognised_number": 2729,
+    "confidence": 1.0,
+    "raw_text": "2729",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 252,
+    "cx": 1269.0,
+    "cy": 1503.5,
+    "bbox": [
+      1192,
+      1481,
+      154,
+      45
+    ],
+    "recognised_number": 2563,
+    "confidence": 1.0,
+    "raw_text": "2563",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 259,
+    "cx": 1713.0,
+    "cy": 1419.5,
+    "bbox": [
+      1540,
+      1332,
+      346,
+      175
+    ],
+    "recognised_number": 2571,
+    "confidence": 1.0,
+    "raw_text": "2571",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 261,
+    "cx": 1759.0,
+    "cy": 1373.0,
+    "bbox": [
+      1571,
+      1276,
+      376,
+      194
+    ],
+    "recognised_number": 2567,
+    "confidence": 1.0,
+    "raw_text": "2567",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 262,
+    "cx": 1814.0,
+    "cy": 1359.0,
+    "bbox": [
+      1707,
+      1288,
+      214,
+      142
+    ],
+    "recognised_number": 2956,
+    "confidence": 1.0,
+    "raw_text": "2956",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 253,
+    "cx": 1517.0,
+    "cy": 1344.5,
+    "bbox": [
+      1370,
+      1278,
+      294,
+      133
+    ],
+    "recognised_number": 2479,
+    "confidence": 1.0,
+    "raw_text": "2479",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 266,
+    "cx": 1950.0,
+    "cy": 1450.0,
+    "bbox": [
+      1855,
+      1408,
+      190,
+      84
+    ],
+    "recognised_number": 2589,
+    "confidence": 1.0,
+    "raw_text": "2589",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 275,
+    "cx": 1985.0,
+    "cy": 1458.5,
+    "bbox": [
+      1920,
+      1431,
+      130,
+      55
+    ],
+    "recognised_number": 2891,
+    "confidence": 1.0,
+    "raw_text": "2891",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 274,
+    "cx": 2357.0,
+    "cy": 1224.5,
+    "bbox": [
+      2335,
+      1205,
+      44,
+      39
+    ],
+    "recognised_number": 2486,
+    "confidence": 1.0,
+    "raw_text": "2486",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 280,
+    "cx": 2683.5,
+    "cy": 1594.5,
+    "bbox": [
+      2561,
+      1548,
+      245,
+      93
+    ],
+    "recognised_number": 2272,
+    "confidence": 1.0,
+    "raw_text": "2272",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 273,
+    "cx": 2193.0,
+    "cy": 1518.5,
+    "bbox": [
+      2053,
+      1483,
+      280,
+      71
+    ],
+    "recognised_number": 2807,
+    "confidence": 1.0,
+    "raw_text": "2807",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 277,
+    "cx": 2178.0,
+    "cy": 1515.5,
+    "bbox": [
+      2085,
+      1489,
+      186,
+      53
+    ],
+    "recognised_number": 2580,
+    "confidence": 1.0,
+    "raw_text": "2580",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": true
+  },
+  {
+    "parcel_id": 285,
+    "cx": 2731.0,
+    "cy": 1211.0,
+    "bbox": [
+      2702,
+      1172,
+      58,
+      78
+    ],
+    "recognised_number": 2471,
+    "confidence": 1.0,
+    "raw_text": "2471",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 293,
+    "cx": 2941.5,
+    "cy": 1600.5,
+    "bbox": [
+      2832,
+      1539,
+      219,
+      123
+    ],
+    "recognised_number": 2545,
+    "confidence": 1.0,
+    "raw_text": "2545",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 298,
+    "cx": 3290.0,
+    "cy": 1506.5,
+    "bbox": [
+      3224,
+      1391,
+      132,
+      231
+    ],
+    "recognised_number": 2560,
+    "confidence": 1.0,
+    "raw_text": "2560",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 289,
+    "cx": 2632.5,
+    "cy": 1488.0,
+    "bbox": [
+      2507,
+      1472,
+      251,
+      32
+    ],
+    "recognised_number": 2589,
+    "confidence": 1.0,
+    "raw_text": "2589",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 297,
+    "cx": 2811.5,
+    "cy": 1540.0,
+    "bbox": [
+      2696,
+      1498,
+      231,
+      84
+    ],
+    "recognised_number": 2847,
+    "confidence": 1.0,
+    "raw_text": "2847",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 302,
+    "cx": 3440.0,
+    "cy": 1628.5,
+    "bbox": [
+      3390,
+      1593,
+      100,
+      71
+    ],
+    "recognised_number": 2587,
+    "confidence": 1.0,
+    "raw_text": "2587",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 314,
+    "cx": 4552.0,
+    "cy": 1605.5,
+    "bbox": [
+      4523,
+      1564,
+      58,
+      83
+    ],
+    "recognised_number": 2507,
+    "confidence": 1.0,
+    "raw_text": "2507",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 326,
+    "cx": 5479.5,
+    "cy": 1453.5,
+    "bbox": [
+      5424,
+      1396,
+      111,
+      115
+    ],
+    "recognised_number": 2547,
+    "confidence": 1.0,
+    "raw_text": "2547",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 341,
+    "cx": 6577.0,
+    "cy": 1570.5,
+    "bbox": [
+      6528,
+      1556,
+      98,
+      29
+    ],
+    "recognised_number": 2847,
+    "confidence": 1.0,
+    "raw_text": "2847",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 346,
+    "cx": 7004.5,
+    "cy": 1620.0,
+    "bbox": [
+      6974,
+      1588,
+      61,
+      64
+    ],
+    "recognised_number": 2451,
+    "confidence": 1.0,
+    "raw_text": "2451",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 356,
+    "cx": 1125.5,
+    "cy": 1578.0,
+    "bbox": [
+      1076,
+      1536,
+      99,
+      84
+    ],
+    "recognised_number": 2547,
+    "confidence": 1.0,
+    "raw_text": "2547",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 361,
+    "cx": 1514.5,
+    "cy": 1628.0,
+    "bbox": [
+      1368,
+      1548,
+      293,
+      160
+    ],
+    "recognised_number": 2542,
+    "confidence": 1.0,
+    "raw_text": "2542",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 360,
+    "cx": 1499.0,
+    "cy": 1694.0,
+    "bbox": [
+      1346,
+      1649,
+      306,
+      90
+    ],
+    "recognised_number": 2510,
+    "confidence": 1.0,
+    "raw_text": "2510",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 357,
+    "cx": 1173.5,
+    "cy": 1600.5,
+    "bbox": [
+      1090,
+      1536,
+      167,
+      129
+    ],
+    "recognised_number": 2756,
+    "confidence": 1.0,
+    "raw_text": "2756",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 374,
+    "cx": 1942.0,
+    "cy": 1730.0,
+    "bbox": [
+      1907,
+      1695,
+      70,
+      70
+    ],
+    "recognised_number": 2754,
+    "confidence": 1.0,
+    "raw_text": "2754",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 373,
+    "cx": 1813.0,
+    "cy": 1794.0,
+    "bbox": [
+      1752,
+      1708,
+      122,
+      172
+    ],
+    "recognised_number": 2589,
+    "confidence": 1.0,
+    "raw_text": "2589",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 381,
+    "cx": 2300.5,
+    "cy": 1621.5,
+    "bbox": [
+      2285,
+      1541,
+      31,
+      161
+    ],
+    "recognised_number": 2811,
+    "confidence": 1.0,
+    "raw_text": "2811",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 380,
+    "cx": 2164.5,
+    "cy": 1668.5,
+    "bbox": [
+      1972,
+      1553,
+      385,
+      231
+    ],
+    "recognised_number": 2445,
+    "confidence": 1.0,
+    "raw_text": "2445",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 384,
+    "cx": 2357.0,
+    "cy": 1727.5,
+    "bbox": [
+      2286,
+      1704,
+      142,
+      47
+    ],
+    "recognised_number": 2580,
+    "confidence": 1.0,
+    "raw_text": "2580",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": true
+  },
+  {
+    "parcel_id": 389,
+    "cx": 2681.0,
+    "cy": 1593.5,
+    "bbox": [
+      2567,
+      1545,
+      228,
+      97
+    ],
+    "recognised_number": 2740,
+    "confidence": 1.0,
+    "raw_text": "2740",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 396,
+    "cx": 2804.0,
+    "cy": 1666.5,
+    "bbox": [
+      2693,
+      1606,
+      222,
+      121
+    ],
+    "recognised_number": 2453,
+    "confidence": 1.0,
+    "raw_text": "2453",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 399,
+    "cx": 3101.5,
+    "cy": 1672.5,
+    "bbox": [
+      3027,
+      1569,
+      149,
+      207
+    ],
+    "recognised_number": 2842,
+    "confidence": 1.0,
+    "raw_text": "2842",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 398,
+    "cx": 2950.0,
+    "cy": 1588.5,
+    "bbox": [
+      2851,
+      1538,
+      198,
+      101
+    ],
+    "recognised_number": 2418,
+    "confidence": 1.0,
+    "raw_text": "2418",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 400,
+    "cx": 3072.0,
+    "cy": 1688.0,
+    "bbox": [
+      2950,
+      1556,
+      244,
+      264
+    ],
+    "recognised_number": 2540,
+    "confidence": 1.0,
+    "raw_text": "2540",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 397,
+    "cx": 2878.5,
+    "cy": 1653.0,
+    "bbox": [
+      2691,
+      1542,
+      375,
+      222
+    ],
+    "recognised_number": 2742,
+    "confidence": 1.0,
+    "raw_text": "2742",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 409,
+    "cx": 3390.5,
+    "cy": 1664.0,
+    "bbox": [
+      3304,
+      1600,
+      173,
+      128
+    ],
+    "recognised_number": 2947,
+    "confidence": 1.0,
+    "raw_text": "2947",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 410,
+    "cx": 3222.5,
+    "cy": 1678.5,
+    "bbox": [
+      3195,
+      1599,
+      55,
+      159
+    ],
+    "recognised_number": 2589,
+    "confidence": 1.0,
+    "raw_text": "2589",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 430,
+    "cx": 4604.0,
+    "cy": 1658.0,
+    "bbox": [
+      4574,
+      1621,
+      60,
+      74
+    ],
+    "recognised_number": 2417,
+    "confidence": 1.0,
+    "raw_text": "2417",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 435,
+    "cx": 5113.5,
+    "cy": 1721.5,
+    "bbox": [
+      5089,
+      1647,
+      49,
+      149
+    ],
+    "recognised_number": 2178,
+    "confidence": 1.0,
+    "raw_text": "2178",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 433,
+    "cx": 4848.5,
+    "cy": 1977.5,
+    "bbox": [
+      4775,
+      1913,
+      147,
+      129
+    ],
+    "recognised_number": 2547,
+    "confidence": 1.0,
+    "raw_text": "2547",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 438,
+    "cx": 5433.0,
+    "cy": 1881.0,
+    "bbox": [
+      5402,
+      1839,
+      62,
+      84
+    ],
+    "recognised_number": 2700,
+    "confidence": 1.0,
+    "raw_text": "2700",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 436,
+    "cx": 5156.5,
+    "cy": 1720.5,
+    "bbox": [
+      5099,
+      1638,
+      115,
+      165
+    ],
+    "recognised_number": 2850,
+    "confidence": 1.0,
+    "raw_text": "2850",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 445,
+    "cx": 6357.5,
+    "cy": 1743.0,
+    "bbox": [
+      6287,
+      1673,
+      141,
+      140
+    ],
+    "recognised_number": 2589,
+    "confidence": 1.0,
+    "raw_text": "2589",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 446,
+    "cx": 6296.5,
+    "cy": 1749.0,
+    "bbox": [
+      6216,
+      1673,
+      161,
+      152
+    ],
+    "recognised_number": 2585,
+    "confidence": 1.0,
+    "raw_text": "2585",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 464,
+    "cx": 7310.5,
+    "cy": 1950.5,
+    "bbox": [
+      7203,
+      1856,
+      215,
+      189
+    ],
+    "recognised_number": 2720,
+    "confidence": 1.0,
+    "raw_text": "2720",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 469,
+    "cx": 6995.5,
+    "cy": 1599.0,
+    "bbox": [
+      6958,
+      1556,
+      75,
+      86
+    ],
+    "recognised_number": 2495,
+    "confidence": 1.0,
+    "raw_text": "2495",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 472,
+    "cx": 7368.5,
+    "cy": 1990.5,
+    "bbox": [
+      7299,
+      1936,
+      139,
+      109
+    ],
+    "recognised_number": 2540,
+    "confidence": 1.0,
+    "raw_text": "2540",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 475,
+    "cx": 7649.5,
+    "cy": 1656.5,
+    "bbox": [
+      7637,
+      1578,
+      25,
+      157
+    ],
+    "recognised_number": 2518,
+    "confidence": 1.0,
+    "raw_text": "2518",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 474,
+    "cx": 7418.0,
+    "cy": 1994.5,
+    "bbox": [
+      7365,
+      1945,
+      106,
+      99
+    ],
+    "recognised_number": 2530,
+    "confidence": 1.0,
+    "raw_text": "2530",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 477,
+    "cx": 7911.0,
+    "cy": 1778.5,
+    "bbox": [
+      7891,
+      1759,
+      40,
+      39
+    ],
+    "recognised_number": 2680,
+    "confidence": 1.0,
+    "raw_text": "2680",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 487,
+    "cx": 2901.0,
+    "cy": 2253.0,
+    "bbox": [
+      2815,
+      2185,
+      172,
+      136
+    ],
+    "recognised_number": 2837,
+    "confidence": 1.0,
+    "raw_text": "2837",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 483,
+    "cx": 2172.5,
+    "cy": 2065.0,
+    "bbox": [
+      2149,
+      1980,
+      47,
+      170
+    ],
+    "recognised_number": 2780,
+    "confidence": 1.0,
+    "raw_text": "2780",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 521,
+    "cx": 7346.0,
+    "cy": 1984.0,
+    "bbox": [
+      7268,
+      1921,
+      156,
+      126
+    ],
+    "recognised_number": 2770,
+    "confidence": 1.0,
+    "raw_text": "2770",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 526,
+    "cx": 7386.0,
+    "cy": 1998.0,
+    "bbox": [
+      7348,
+      1942,
+      76,
+      112
+    ],
+    "recognised_number": 2649,
+    "confidence": 1.0,
+    "raw_text": "2649",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 531,
+    "cx": 7388.5,
+    "cy": 2025.5,
+    "bbox": [
+      7310,
+      1949,
+      157,
+      153
+    ],
+    "recognised_number": 2742,
+    "confidence": 1.0,
+    "raw_text": "2742",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 527,
+    "cx": 7457.0,
+    "cy": 2032.0,
+    "bbox": [
+      7385,
+      1948,
+      144,
+      168
+    ],
+    "recognised_number": 2780,
+    "confidence": 1.0,
+    "raw_text": "2780",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 548,
+    "cx": 4803.0,
+    "cy": 2369.5,
+    "bbox": [
+      4715,
+      2304,
+      176,
+      131
+    ],
+    "recognised_number": 2675,
+    "confidence": 1.0,
+    "raw_text": "2675",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 543,
+    "cx": 3341.5,
+    "cy": 2482.0,
+    "bbox": [
+      3207,
+      2340,
+      269,
+      284
+    ],
+    "recognised_number": 2618,
+    "confidence": 1.0,
+    "raw_text": "2618",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 547,
+    "cx": 3278.5,
+    "cy": 2549.5,
+    "bbox": [
+      3136,
+      2383,
+      285,
+      333
+    ],
+    "recognised_number": 2716,
+    "confidence": 1.0,
+    "raw_text": "2716",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 549,
+    "cx": 4855.0,
+    "cy": 2460.5,
+    "bbox": [
+      4725,
+      2423,
+      260,
+      75
+    ],
+    "recognised_number": 2157,
+    "confidence": 1.0,
+    "raw_text": "2157",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 555,
+    "cx": 5846.5,
+    "cy": 2513.5,
+    "bbox": [
+      5775,
+      2454,
+      143,
+      119
+    ],
+    "recognised_number": 2764,
+    "confidence": 1.0,
+    "raw_text": "2764",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 568,
+    "cx": 6869.5,
+    "cy": 2444.0,
+    "bbox": [
+      6842,
+      2416,
+      55,
+      56
+    ],
+    "recognised_number": 2687,
+    "confidence": 1.0,
+    "raw_text": "2687",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 586,
+    "cx": 4341.0,
+    "cy": 2760.0,
+    "bbox": [
+      4312,
+      2715,
+      58,
+      90
+    ],
+    "recognised_number": 2456,
+    "confidence": 1.0,
+    "raw_text": "2456",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 592,
+    "cx": 6147.0,
+    "cy": 2788.5,
+    "bbox": [
+      6123,
+      2704,
+      48,
+      169
+    ],
+    "recognised_number": 2534,
+    "confidence": 1.0,
+    "raw_text": "2534",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 602,
+    "cx": 6970.0,
+    "cy": 2776.5,
+    "bbox": [
+      6936,
+      2691,
+      68,
+      171
+    ],
+    "recognised_number": 2341,
+    "confidence": 1.0,
+    "raw_text": "2341",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 613,
+    "cx": 7219.5,
+    "cy": 2900.0,
+    "bbox": [
+      7131,
+      2833,
+      177,
+      134
+    ],
+    "recognised_number": 2478,
+    "confidence": 1.0,
+    "raw_text": "2478",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 617,
+    "cx": 8053.5,
+    "cy": 2884.0,
+    "bbox": [
+      7979,
+      2813,
+      149,
+      142
+    ],
+    "recognised_number": 2527,
+    "confidence": 1.0,
+    "raw_text": "2527",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 614,
+    "cx": 7147.5,
+    "cy": 3003.0,
+    "bbox": [
+      7074,
+      2937,
+      147,
+      132
+    ],
+    "recognised_number": 2517,
+    "confidence": 1.0,
+    "raw_text": "2517",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 642,
+    "cx": 5891.5,
+    "cy": 3206.0,
+    "bbox": [
+      5865,
+      3127,
+      53,
+      158
+    ],
+    "recognised_number": 2517,
+    "confidence": 1.0,
+    "raw_text": "2517",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 646,
+    "cx": 7016.0,
+    "cy": 3417.0,
+    "bbox": [
+      6992,
+      3341,
+      48,
+      152
+    ],
+    "recognised_number": 2687,
+    "confidence": 1.0,
+    "raw_text": "2687",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 668,
+    "cx": 2539.0,
+    "cy": 3798.5,
+    "bbox": [
+      2340,
+      3668,
+      398,
+      261
+    ],
+    "recognised_number": 2571,
+    "confidence": 1.0,
+    "raw_text": "2571",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 667,
+    "cx": 2729.0,
+    "cy": 3829.0,
+    "bbox": [
+      2646,
+      3771,
+      166,
+      116
+    ],
+    "recognised_number": 2717,
+    "confidence": 1.0,
+    "raw_text": "2717",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 672,
+    "cx": 3080.0,
+    "cy": 3698.5,
+    "bbox": [
+      2966,
+      3653,
+      228,
+      91
+    ],
+    "recognised_number": 2558,
+    "confidence": 1.0,
+    "raw_text": "2558",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 680,
+    "cx": 4136.5,
+    "cy": 3714.0,
+    "bbox": [
+      4095,
+      3669,
+      83,
+      90
+    ],
+    "recognised_number": 7000,
+    "confidence": 1.0,
+    "raw_text": "7000",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 679,
+    "cx": 4102.5,
+    "cy": 3642.5,
+    "bbox": [
+      4060,
+      3594,
+      85,
+      97
+    ],
+    "recognised_number": 2547,
+    "confidence": 1.0,
+    "raw_text": "2547",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 695,
+    "cx": 6937.0,
+    "cy": 3837.5,
+    "bbox": [
+      6849,
+      3781,
+      176,
+      113
+    ],
+    "recognised_number": 2589,
+    "confidence": 1.0,
+    "raw_text": "2589",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 696,
+    "cx": 6846.5,
+    "cy": 3877.5,
+    "bbox": [
+      6781,
+      3799,
+      131,
+      157
+    ],
+    "recognised_number": 2481,
+    "confidence": 1.0,
+    "raw_text": "2481",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 699,
+    "cx": 7049.0,
+    "cy": 3912.5,
+    "bbox": [
+      6970,
+      3861,
+      158,
+      103
+    ],
+    "recognised_number": 2580,
+    "confidence": 1.0,
+    "raw_text": "2580",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": true
+  },
+  {
+    "parcel_id": 706,
+    "cx": 7179.5,
+    "cy": 3727.5,
+    "bbox": [
+      7084,
+      3517,
+      191,
+      421
+    ],
+    "recognised_number": 2670,
+    "confidence": 1.0,
+    "raw_text": "2670",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 701,
+    "cx": 7101.0,
+    "cy": 3841.5,
+    "bbox": [
+      7078,
+      3816,
+      46,
+      51
+    ],
+    "recognised_number": 2089,
+    "confidence": 1.0,
+    "raw_text": "2089",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 709,
+    "cx": 1163.5,
+    "cy": 4059.0,
+    "bbox": [
+      1140,
+      4039,
+      47,
+      40
+    ],
+    "recognised_number": 3690,
+    "confidence": 1.0,
+    "raw_text": "3690",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 712,
+    "cx": 1579.5,
+    "cy": 4271.5,
+    "bbox": [
+      1504,
+      4204,
+      151,
+      135
+    ],
+    "recognised_number": 2543,
+    "confidence": 1.0,
+    "raw_text": "2543",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 714,
+    "cx": 1347.5,
+    "cy": 4262.5,
+    "bbox": [
+      1294,
+      4234,
+      107,
+      57
+    ],
+    "recognised_number": 2889,
+    "confidence": 1.0,
+    "raw_text": "2889",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 715,
+    "cx": 1720.0,
+    "cy": 4233.5,
+    "bbox": [
+      1666,
+      4193,
+      108,
+      81
+    ],
+    "recognised_number": 2589,
+    "confidence": 1.0,
+    "raw_text": "2589",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 716,
+    "cx": 1639.5,
+    "cy": 4143.0,
+    "bbox": [
+      1598,
+      4097,
+      83,
+      92
+    ],
+    "recognised_number": 2617,
+    "confidence": 1.0,
+    "raw_text": "2617",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 719,
+    "cx": 1744.0,
+    "cy": 3924.5,
+    "bbox": [
+      1544,
+      3840,
+      400,
+      169
+    ],
+    "recognised_number": 2534,
+    "confidence": 1.0,
+    "raw_text": "2534",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 726,
+    "cx": 1680.5,
+    "cy": 3912.5,
+    "bbox": [
+      1547,
+      3857,
+      267,
+      111
+    ],
+    "recognised_number": 2541,
+    "confidence": 1.0,
+    "raw_text": "2541",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 744,
+    "cx": 3941.5,
+    "cy": 4132.5,
+    "bbox": [
+      3844,
+      4114,
+      195,
+      37
+    ],
+    "recognised_number": 2580,
+    "confidence": 1.0,
+    "raw_text": "2580",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": true
+  },
+  {
+    "parcel_id": 751,
+    "cx": 5256.0,
+    "cy": 4183.0,
+    "bbox": [
+      5118,
+      4048,
+      276,
+      270
+    ],
+    "recognised_number": 2570,
+    "confidence": 1.0,
+    "raw_text": "2570",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 761,
+    "cx": 5589.5,
+    "cy": 4200.0,
+    "bbox": [
+      5464,
+      4081,
+      251,
+      238
+    ],
+    "recognised_number": 2753,
+    "confidence": 1.0,
+    "raw_text": "2753",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 769,
+    "cx": 6046.5,
+    "cy": 4180.5,
+    "bbox": [
+      5832,
+      4086,
+      429,
+      189
+    ],
+    "recognised_number": 2910,
+    "confidence": 1.0,
+    "raw_text": "2910",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 781,
+    "cx": 7119.5,
+    "cy": 4085.0,
+    "bbox": [
+      7034,
+      4067,
+      171,
+      36
+    ],
+    "recognised_number": 2580,
+    "confidence": 1.0,
+    "raw_text": "2580",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": true
+  },
+  {
+    "parcel_id": 787,
+    "cx": 7091.5,
+    "cy": 3946.5,
+    "bbox": [
+      6941,
+      3841,
+      301,
+      211
+    ],
+    "recognised_number": 2901,
+    "confidence": 1.0,
+    "raw_text": "2901",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 785,
+    "cx": 7100.0,
+    "cy": 3959.0,
+    "bbox": [
+      7003,
+      3883,
+      194,
+      152
+    ],
+    "recognised_number": 2109,
+    "confidence": 1.0,
+    "raw_text": "2109",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 791,
+    "cx": 7353.0,
+    "cy": 4011.0,
+    "bbox": [
+      7303,
+      3971,
+      100,
+      80
+    ],
+    "recognised_number": 2547,
+    "confidence": 1.0,
+    "raw_text": "2547",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 798,
+    "cx": 1426.5,
+    "cy": 4389.0,
+    "bbox": [
+      1390,
+      4347,
+      73,
+      84
+    ],
+    "recognised_number": 2947,
+    "confidence": 1.0,
+    "raw_text": "2947",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 799,
+    "cx": 1561.5,
+    "cy": 4392.0,
+    "bbox": [
+      1519,
+      4348,
+      85,
+      88
+    ],
+    "recognised_number": 2849,
+    "confidence": 1.0,
+    "raw_text": "2849",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 802,
+    "cx": 1569.0,
+    "cy": 4543.0,
+    "bbox": [
+      1480,
+      4483,
+      178,
+      120
+    ],
+    "recognised_number": 2542,
+    "confidence": 1.0,
+    "raw_text": "2542",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 803,
+    "cx": 1298.5,
+    "cy": 4430.0,
+    "bbox": [
+      1267,
+      4377,
+      63,
+      106
+    ],
+    "recognised_number": 2537,
+    "confidence": 1.0,
+    "raw_text": "2537",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 797,
+    "cx": 1586.0,
+    "cy": 4290.5,
+    "bbox": [
+      1508,
+      4224,
+      156,
+      133
+    ],
+    "recognised_number": 2573,
+    "confidence": 1.0,
+    "raw_text": "2573",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 796,
+    "cx": 1544.0,
+    "cy": 4550.5,
+    "bbox": [
+      1492,
+      4509,
+      104,
+      83
+    ],
+    "recognised_number": 2562,
+    "confidence": 1.0,
+    "raw_text": "2562",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 807,
+    "cx": 1557.5,
+    "cy": 4570.5,
+    "bbox": [
+      1505,
+      4539,
+      105,
+      63
+    ],
+    "recognised_number": 2589,
+    "confidence": 1.0,
+    "raw_text": "2589",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 805,
+    "cx": 1344.0,
+    "cy": 4498.5,
+    "bbox": [
+      1303,
+      4458,
+      82,
+      81
+    ],
+    "recognised_number": 2700,
+    "confidence": 1.0,
+    "raw_text": "2700",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 809,
+    "cx": 1786.5,
+    "cy": 4676.5,
+    "bbox": [
+      1721,
+      4622,
+      131,
+      109
+    ],
+    "recognised_number": 2582,
+    "confidence": 1.0,
+    "raw_text": "2582",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 813,
+    "cx": 1822.0,
+    "cy": 4572.5,
+    "bbox": [
+      1774,
+      4532,
+      96,
+      81
+    ],
+    "recognised_number": 2772,
+    "confidence": 1.0,
+    "raw_text": "2772",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 810,
+    "cx": 1904.5,
+    "cy": 4629.0,
+    "bbox": [
+      1862,
+      4594,
+      85,
+      70
+    ],
+    "recognised_number": 2765,
+    "confidence": 1.0,
+    "raw_text": "2765",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 816,
+    "cx": 1804.0,
+    "cy": 4446.5,
+    "bbox": [
+      1697,
+      4402,
+      214,
+      89
+    ],
+    "recognised_number": 2584,
+    "confidence": 1.0,
+    "raw_text": "2584",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 824,
+    "cx": 2418.5,
+    "cy": 4311.0,
+    "bbox": [
+      2343,
+      4251,
+      151,
+      120
+    ],
+    "recognised_number": 2567,
+    "confidence": 1.0,
+    "raw_text": "2567",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 825,
+    "cx": 2587.5,
+    "cy": 4634.0,
+    "bbox": [
+      2564,
+      4544,
+      47,
+      180
+    ],
+    "recognised_number": 2489,
+    "confidence": 1.0,
+    "raw_text": "2489",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 823,
+    "cx": 2706.0,
+    "cy": 4584.0,
+    "bbox": [
+      2599,
+      4539,
+      214,
+      90
+    ],
+    "recognised_number": 2570,
+    "confidence": 1.0,
+    "raw_text": "2570",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 829,
+    "cx": 2775.5,
+    "cy": 4611.0,
+    "bbox": [
+      2688,
+      4561,
+      175,
+      100
+    ],
+    "recognised_number": 2589,
+    "confidence": 1.0,
+    "raw_text": "2589",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 832,
+    "cx": 3345.0,
+    "cy": 4410.0,
+    "bbox": [
+      3271,
+      4336,
+      148,
+      148
+    ],
+    "recognised_number": 2689,
+    "confidence": 1.0,
+    "raw_text": "2689",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 860,
+    "cx": 5637.5,
+    "cy": 4534.5,
+    "bbox": [
+      5588,
+      4425,
+      99,
+      219
+    ],
+    "recognised_number": 2580,
+    "confidence": 1.0,
+    "raw_text": "2580",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": true
+  },
+  {
+    "parcel_id": 880,
+    "cx": 7227.0,
+    "cy": 4638.0,
+    "bbox": [
+      7141,
+      4584,
+      172,
+      108
+    ],
+    "recognised_number": 2519,
+    "confidence": 1.0,
+    "raw_text": "2519",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 884,
+    "cx": 7617.5,
+    "cy": 4677.0,
+    "bbox": [
+      7549,
+      4647,
+      137,
+      60
+    ],
+    "recognised_number": 2586,
+    "confidence": 1.0,
+    "raw_text": "2586",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 876,
+    "cx": 6664.5,
+    "cy": 4482.0,
+    "bbox": [
+      6630,
+      4412,
+      69,
+      140
+    ],
+    "recognised_number": 2843,
+    "confidence": 1.0,
+    "raw_text": "2843",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 887,
+    "cx": 7659.5,
+    "cy": 4533.0,
+    "bbox": [
+      7584,
+      4508,
+      151,
+      50
+    ],
+    "recognised_number": 2580,
+    "confidence": 1.0,
+    "raw_text": "2580",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": true
+  },
+  {
+    "parcel_id": 888,
+    "cx": 7701.0,
+    "cy": 4523.5,
+    "bbox": [
+      7637,
+      4493,
+      128,
+      61
+    ],
+    "recognised_number": 2589,
+    "confidence": 1.0,
+    "raw_text": "2589",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 885,
+    "cx": 7650.5,
+    "cy": 4439.5,
+    "bbox": [
+      7588,
+      4393,
+      125,
+      93
+    ],
+    "recognised_number": 2789,
+    "confidence": 1.0,
+    "raw_text": "2789",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 892,
+    "cx": 1148.5,
+    "cy": 4823.0,
+    "bbox": [
+      1024,
+      4706,
+      249,
+      234
+    ],
+    "recognised_number": 2547,
+    "confidence": 1.0,
+    "raw_text": "2547",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 895,
+    "cx": 1279.5,
+    "cy": 4772.5,
+    "bbox": [
+      1223,
+      4726,
+      113,
+      93
+    ],
+    "recognised_number": 2720,
+    "confidence": 1.0,
+    "raw_text": "2720",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 896,
+    "cx": 1372.0,
+    "cy": 4732.5,
+    "bbox": [
+      1322,
+      4700,
+      100,
+      65
+    ],
+    "recognised_number": 2629,
+    "confidence": 1.0,
+    "raw_text": "2629",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 898,
+    "cx": 1523.5,
+    "cy": 4758.0,
+    "bbox": [
+      1464,
+      4712,
+      119,
+      92
+    ],
+    "recognised_number": 2574,
+    "confidence": 1.0,
+    "raw_text": "2574",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 900,
+    "cx": 1492.5,
+    "cy": 4874.0,
+    "bbox": [
+      1444,
+      4832,
+      97,
+      84
+    ],
+    "recognised_number": 2523,
+    "confidence": 1.0,
+    "raw_text": "2523",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 903,
+    "cx": 1443.5,
+    "cy": 4816.0,
+    "bbox": [
+      1399,
+      4776,
+      89,
+      80
+    ],
+    "recognised_number": 2503,
+    "confidence": 1.0,
+    "raw_text": "2503",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 907,
+    "cx": 1782.5,
+    "cy": 4676.5,
+    "bbox": [
+      1728,
+      4624,
+      109,
+      105
+    ],
+    "recognised_number": 2716,
+    "confidence": 1.0,
+    "raw_text": "2716",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 906,
+    "cx": 1532.0,
+    "cy": 4928.5,
+    "bbox": [
+      1471,
+      4897,
+      122,
+      63
+    ],
+    "recognised_number": 2589,
+    "confidence": 1.0,
+    "raw_text": "2589",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 910,
+    "cx": 1660.0,
+    "cy": 4712.5,
+    "bbox": [
+      1586,
+      4643,
+      148,
+      139
+    ],
+    "recognised_number": 2772,
+    "confidence": 1.0,
+    "raw_text": "2772",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 916,
+    "cx": 1682.0,
+    "cy": 4737.0,
+    "bbox": [
+      1628,
+      4694,
+      108,
+      86
+    ],
+    "recognised_number": 2582,
+    "confidence": 1.0,
+    "raw_text": "2582",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 915,
+    "cx": 1793.5,
+    "cy": 4854.5,
+    "bbox": [
+      1733,
+      4806,
+      121,
+      97
+    ],
+    "recognised_number": 2478,
+    "confidence": 1.0,
+    "raw_text": "2478",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 921,
+    "cx": 1875.5,
+    "cy": 4879.0,
+    "bbox": [
+      1799,
+      4796,
+      153,
+      166
+    ],
+    "recognised_number": 2710,
+    "confidence": 1.0,
+    "raw_text": "2710",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 927,
+    "cx": 2695.0,
+    "cy": 4790.0,
+    "bbox": [
+      2603,
+      4738,
+      184,
+      104
+    ],
+    "recognised_number": 2580,
+    "confidence": 1.0,
+    "raw_text": "2580",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": true
+  },
+  {
+    "parcel_id": 939,
+    "cx": 3811.0,
+    "cy": 4874.5,
+    "bbox": [
+      3724,
+      4848,
+      174,
+      53
+    ],
+    "recognised_number": 2580,
+    "confidence": 1.0,
+    "raw_text": "2580",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": true
+  },
+  {
+    "parcel_id": 938,
+    "cx": 3780.5,
+    "cy": 4828.5,
+    "bbox": [
+      3704,
+      4805,
+      153,
+      47
+    ],
+    "recognised_number": 2789,
+    "confidence": 1.0,
+    "raw_text": "2789",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 959,
+    "cx": 6137.0,
+    "cy": 4664.5,
+    "bbox": [
+      6099,
+      4626,
+      76,
+      77
+    ],
+    "recognised_number": 2547,
+    "confidence": 1.0,
+    "raw_text": "2547",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 968,
+    "cx": 7338.0,
+    "cy": 5087.5,
+    "bbox": [
+      7316,
+      5068,
+      44,
+      39
+    ],
+    "recognised_number": 2408,
+    "confidence": 1.0,
+    "raw_text": "2408",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 970,
+    "cx": 7337.5,
+    "cy": 5090.0,
+    "bbox": [
+      7314,
+      5069,
+      47,
+      42
+    ],
+    "recognised_number": 2845,
+    "confidence": 1.0,
+    "raw_text": "2845",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 984,
+    "cx": 1663.0,
+    "cy": 5362.5,
+    "bbox": [
+      1552,
+      5346,
+      222,
+      33
+    ],
+    "recognised_number": 2589,
+    "confidence": 1.0,
+    "raw_text": "2589",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 993,
+    "cx": 4419.0,
+    "cy": 5104.5,
+    "bbox": [
+      4367,
+      5072,
+      104,
+      65
+    ],
+    "recognised_number": 2589,
+    "confidence": 1.0,
+    "raw_text": "2589",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 1002,
+    "cx": 6854.0,
+    "cy": 5106.0,
+    "bbox": [
+      6807,
+      5059,
+      94,
+      94
+    ],
+    "recognised_number": 2544,
+    "confidence": 1.0,
+    "raw_text": "2544",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 1003,
+    "cx": 7337.5,
+    "cy": 5088.0,
+    "bbox": [
+      7316,
+      5069,
+      43,
+      38
+    ],
+    "recognised_number": 2608,
+    "confidence": 1.0,
+    "raw_text": "2608",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 1011,
+    "cx": 7337.5,
+    "cy": 5088.0,
+    "bbox": [
+      7315,
+      5069,
+      45,
+      38
+    ],
+    "recognised_number": 2906,
+    "confidence": 1.0,
+    "raw_text": "2906",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 1031,
+    "cx": 2906.0,
+    "cy": 5789.0,
+    "bbox": [
+      2837,
+      5696,
+      138,
+      186
+    ],
+    "recognised_number": 2576,
+    "confidence": 1.0,
+    "raw_text": "2576",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  },
+  {
+    "parcel_id": 1090,
+    "cx": 8263.5,
+    "cy": 6403.0,
+    "bbox": [
+      8218,
+      6369,
+      91,
+      68
+    ],
+    "recognised_number": 2580,
+    "confidence": 1.0,
+    "raw_text": "2580",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": true
+  },
+  {
+    "parcel_id": 1079,
+    "cx": 2668.5,
+    "cy": 6266.0,
+    "bbox": [
+      2631,
+      6163,
+      75,
+      206
+    ],
+    "recognised_number": 2587,
+    "confidence": 1.0,
+    "raw_text": "2587",
+    "model": "claude-haiku-4-5-20251001",
+    "rotation": 180,
+    "is_csv_target": false
+  }
+]

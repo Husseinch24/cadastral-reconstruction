@@ -1,0 +1,17 @@
+[
+  {
+    "parcel_id": 0,
+    "detected_number": 3866,
+    "cx": 7156.68,
+    "cy": 4780.02,
+    "confidence": 1.0,
+    "validation": "INVALID",
+    "area_px": 0.0,
+    "bbox": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+]
