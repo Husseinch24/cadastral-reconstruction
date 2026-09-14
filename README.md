@@ -235,10 +235,3 @@ If you use this code or build on the method, please cite the associated thesis:
 Chalhoub, Hussein. AI-Based Panoramic Reconstruction of Cadastral Maps.
 Master's thesis, Universite Saint-Joseph de Beyrouth, 2026.
 ```
-
-## License
-
-No license has been specified yet. Add a license before redistributing the
-code or accepting external contributions.
-
----
