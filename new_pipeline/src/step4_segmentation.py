@@ -1,0 +1,835 @@
+"""
+=============================================================================
+MILESTONE 2 — MASK R-CNN PARCEL SEGMENTATION TRAINING
+=============================================================================
+Masters Thesis — AI-Based Panoramic Cadastral Image Reconstruction
+Author  : Hussein Chalhoub
+
+Purpose
+--------
+Train a Mask R-CNN model to detect and segment individual land parcels
+in cadastral map images.  The trained model replaces the classical
+contour-based detection used in Steps 1-6, providing:
+
+  - More robust detection on degraded/damaged scans
+  - Instance-level masks (each parcel individually segmented)
+  - Confidence scores per detected parcel
+  - Works on the full range of scan conditions (augmented during Milestone 1)
+
+Architecture
+-------------
+  ResNet-50 backbone (pretrained on ImageNet)
+      └── Feature Pyramid Network (multi-scale features)
+          └── Region Proposal Network
+              └── ROI Align + mask head
+                  └── Per-parcel binary mask + confidence score
+
+Why ResNet-50 FPN?
+  - Standard choice for instance segmentation on medium-sized objects
+  - Pre-trained weights transfer well to grayscale document images
+  - Fast enough to run inference on 6000x8000 maps in ~2-3 seconds on GPU
+  - 8 GB VRAM is sufficient for batch_size=2 at 512x512 crops
+
+Training strategy
+------------------
+  Phase 1 (epochs 1-5):   Freeze backbone, train only the heads
+                            Fast convergence, learns the parcel concept
+  Phase 2 (epochs 6-20):  Unfreeze backbone, fine-tune everything
+                            Improves low-level feature extraction for
+                            blueprint-specific ink patterns
+
+Usage
+------
+  # Activate environment first
+  .\venv_thesis\Scripts\Activate.ps1
+
+  # Train the model
+  python new_pipeline/src/step4_segmentation.py --train
+
+  # Evaluate on test set
+  python new_pipeline/src/step4_segmentation.py --eval
+
+  # Run inference on a single map image
+  python new_pipeline/src/step4_segmentation.py --infer --image output/preprocessed/map_45_clean.png
+
+  # Run inference on all maps and save results
+  python new_pipeline/src/step4_segmentation.py --infer --all
+
+Output
+-------
+  new_pipeline/models/segmentation/
+    best_model.pth          - best checkpoint (highest val mAP)
+    last_model.pth          - final epoch checkpoint
+    training_log.json       - loss and metric history
+    training_curves.png     - loss/mAP plots
+
+  new_pipeline/data/predictions/
+    map_<N>_parcels.json    - detected parcels (centroid, mask, confidence)
+    map_<N>_overlay.png     - visualization of detected parcels
+
+=============================================================================
+"""
+
+import argparse
+import json
+import time
+from pathlib import Path
+
+import cv2
+import numpy as np
+import torch
+import torch.utils.data
+import torchvision
+from torchvision.models.detection import maskrcnn_resnet50_fpn, MaskRCNN_ResNet50_FPN_Weights
+from torchvision.models.detection.faster_rcnn import FastRCNNPredictor
+from torchvision.models.detection.mask_rcnn import MaskRCNNPredictor
+import matplotlib
+matplotlib.use("Agg")   # non-interactive backend - safe for training loops
+import matplotlib.pyplot as plt
+from tqdm import tqdm
+
+
+# ---------------------------------------------------------------------------
+# CONFIGURATION
+# ---------------------------------------------------------------------------
+
+SYNTHETIC_DIR   = Path("new_pipeline/data/synthetic")
+MODEL_DIR       = Path("new_pipeline/models/segmentation")
+PRED_DIR        = Path("new_pipeline/data/predictions")
+PREPROCESSED_DIR = Path("output/preprocessed")
+
+# Training hyperparameters
+CONFIG = {
+    "num_classes":     2,          # 1 class (parcel) + background
+    "batch_size":      2,          # safe for 8 GB VRAM at 512x512
+    "num_workers":     0,          # 0 required on Windows with CUDA
+    "lr_phase1":       0.001,      # learning rate - backbone frozen
+    "lr_phase2":       0.0001,     # learning rate - full fine-tune
+    "epochs_phase1":   5,          # backbone frozen
+    "epochs_phase2":   15,         # full fine-tune
+    "weight_decay":    0.0005,
+    "momentum":        0.9,
+    "lr_step_size":    5,          # decay LR every N epochs
+    "lr_gamma":        0.5,        # LR decay factor
+    "score_threshold": 0.5,        # minimum confidence for predictions
+    "nms_threshold":   0.3,        # NMS IoU threshold
+    "min_parcel_area": 500,        # px² - minimum predicted parcel area
+    "device":          "cuda" if torch.cuda.is_available() else "cpu",
+}
+
+ALL_MAPS = [str(n) for n in range(43, 56)]
+
+
+# ---------------------------------------------------------------------------
+# DATASET
+# ---------------------------------------------------------------------------
+
+class CadastralDataset(torch.utils.data.Dataset):
+    """
+    PyTorch Dataset for cadastral parcel instance segmentation.
+
+    Loads images and COCO-format annotations from the synthetic data
+    generated by Milestone 1.
+
+    Returns:
+      image  : float32 tensor [1, H, W] (grayscale, normalized to [0,1])
+      target : dict with:
+                 boxes       : [N, 4] float32 - bounding boxes in [x1,y1,x2,y2]
+                 labels      : [N] int64 - class labels (all 1 for parcel)
+                 masks       : [N, H, W] uint8 - binary instance masks
+                 image_id    : [1] int64
+                 area        : [N] float32 - parcel areas
+                 iscrowd     : [N] uint8 - all 0 (no crowd instances)
+    """
+
+    def __init__(self, split: str, transforms=None):
+        self.split = split
+        self.transforms = transforms
+        self.img_dir    = SYNTHETIC_DIR / "images" / split
+        ann_path        = SYNTHETIC_DIR / "annotations" / f"{split}.json"
+
+        if not ann_path.exists():
+            raise FileNotFoundError(
+                f"Annotation file not found: {ann_path}\n"
+                f"Run data_gen.py first."
+            )
+
+        with open(ann_path, "r", encoding="utf-8") as f:
+            self.coco_data = json.load(f)
+
+        # Build image_id -> annotations lookup
+        self.images = self.coco_data["images"]
+        self.ann_by_image = {}
+        for ann in self.coco_data.get("annotations", []):
+            iid = ann["image_id"]
+            if iid not in self.ann_by_image:
+                self.ann_by_image[iid] = []
+            self.ann_by_image[iid].append(ann)
+
+    def __len__(self):
+        return len(self.images)
+
+    def __getitem__(self, idx):
+        img_info = self.images[idx]
+        img_id   = img_info["id"]
+        img_path = self.img_dir / img_info["file_name"]
+
+        # Load grayscale image
+        data = np.fromfile(str(img_path), dtype=np.uint8)
+        img  = cv2.imdecode(data, cv2.IMREAD_GRAYSCALE)
+        h, w = img.shape
+
+        # Convert to float tensor [1, H, W] in range [0, 1]
+        img_tensor = torch.from_numpy(img.astype(np.float32) / 255.0).unsqueeze(0)
+
+        # Build target
+        annotations = self.ann_by_image.get(img_id, [])
+        boxes  = []
+        labels = []
+        masks  = []
+        areas  = []
+
+        for ann in annotations:
+            # Bounding box: COCO format [x, y, w, h] -> [x1, y1, x2, y2]
+            x, y, bw, bh = ann["bbox"]
+            if bw <= 0 or bh <= 0:
+                continue
+            x1, y1, x2, y2 = float(x), float(y), float(x + bw), float(y + bh)
+            x2 = min(x2, float(w))
+            y2 = min(y2, float(h))
+            if x2 <= x1 or y2 <= y1:
+                continue
+            boxes.append([x1, y1, x2, y2])
+            labels.append(1)
+            areas.append(float(ann.get("area", bw * bh)))
+
+            # Reconstruct binary mask from polygon
+            # IMPORTANT: Mask R-CNN expects binary masks with values 0 and 1
+            # NOT 0 and 255. Using 255 causes loss_mask to explode.
+            mask = np.zeros((h, w), dtype=np.uint8)
+            for seg in ann.get("segmentation", []):
+                pts = np.array(seg, dtype=np.float32).reshape(-1, 2).astype(np.int32)
+                cv2.fillPoly(mask, [pts], 1)
+            masks.append(mask)
+
+        if not boxes:
+            # Return empty target (image with no detected parcels)
+            target = {
+                "boxes":    torch.zeros((0, 4), dtype=torch.float32),
+                "labels":   torch.zeros(0, dtype=torch.int64),
+                "masks":    torch.zeros((0, h, w), dtype=torch.uint8),
+                "image_id": torch.tensor([img_id], dtype=torch.int64),
+                "area":     torch.zeros(0, dtype=torch.float32),
+                "iscrowd":  torch.zeros(0, dtype=torch.uint8),
+            }
+        else:
+            masks_arr = np.stack(masks, axis=0)
+            target = {
+                "boxes":    torch.tensor(boxes,  dtype=torch.float32),
+                "labels":   torch.tensor(labels, dtype=torch.int64),
+                "masks":    torch.tensor(masks_arr, dtype=torch.uint8),
+                "image_id": torch.tensor([img_id], dtype=torch.int64),
+                "area":     torch.tensor(areas,  dtype=torch.float32),
+                "iscrowd":  torch.zeros(len(boxes), dtype=torch.uint8),
+            }
+
+        return img_tensor, target
+
+
+def collate_fn(batch):
+    """Custom collate: images and targets stay as lists (variable N instances)."""
+    return tuple(zip(*batch))
+
+
+# ---------------------------------------------------------------------------
+# MODEL
+# ---------------------------------------------------------------------------
+
+def build_model(num_classes: int = 2,
+                pretrained: bool = True) -> torch.nn.Module:
+    """
+    Build Mask R-CNN with ResNet-50 FPN backbone.
+
+    Modifications from default:
+      - Box predictor head replaced to output num_classes classes
+      - Mask predictor head replaced to output num_classes masks
+      - Input is grayscale (1 channel) — we replicate to 3 channels in forward
+
+    Why not 3-channel input?
+      Mask R-CNN backbone expects RGB.  Our images are grayscale.
+      The cleanest solution: replicate the single channel 3 times inside
+      the forward pass (torch.repeat).  This keeps the pretrained weights
+      valid — they receive 3 identical channels instead of 3 different ones,
+      which converges faster than random initialization.
+    """
+    weights = MaskRCNN_ResNet50_FPN_Weights.DEFAULT if pretrained else None
+    model   = maskrcnn_resnet50_fpn(weights=weights)
+
+    # Replace box predictor
+    in_features = model.roi_heads.box_predictor.cls_score.in_features
+    model.roi_heads.box_predictor = FastRCNNPredictor(in_features, num_classes)
+
+    # Replace mask predictor
+    in_features_mask = model.roi_heads.mask_predictor.conv5_mask.in_channels
+    hidden_layer     = 256
+    model.roi_heads.mask_predictor = MaskRCNNPredictor(
+        in_features_mask, hidden_layer, num_classes
+    )
+
+    return model
+
+
+class GrayscaleWrapper(torch.nn.Module):
+    """
+    Wraps Mask R-CNN to accept 1-channel grayscale images.
+
+    Fix for negative loss bug:
+    Mask R-CNN's GeneralizedRCNN.forward() calls self.transform() which
+    applies ImageNet normalization INTERNALLY.  We must NOT pre-normalize
+    the images ourselves.  Instead feed raw uint8-range values [0,255]
+    as float32, replicated to 3 channels.  The internal transform then
+    correctly normalizes them with ImageNet mean/std.
+
+    Input:  list of float32 tensors [1, H, W] in range [0, 1]
+    Output: list of float32 tensors [3, H, W] in range [0, 255]
+            (un-normalized — Mask R-CNN normalizes internally)
+    """
+    def __init__(self, model):
+        super().__init__()
+        self.model = model
+
+    def forward(self, images, targets=None):
+        # Scale back to [0, 255] range then replicate to 3 channels
+        # Mask R-CNN's internal GeneralizedRCNNTransform handles normalization
+        images_rgb = [img.repeat(3, 1, 1) * 255.0 for img in images]
+        if targets is not None:
+            return self.model(images_rgb, targets)
+        return self.model(images_rgb)
+
+
+# ---------------------------------------------------------------------------
+# TRAINING
+# ---------------------------------------------------------------------------
+
+def set_backbone_trainable(model: GrayscaleWrapper, trainable: bool):
+    """Freeze or unfreeze the ResNet-50 backbone."""
+    for param in model.model.backbone.parameters():
+        param.requires_grad = trainable
+
+
+def train_one_epoch(model, optimizer, data_loader, device, epoch):
+    model.train()
+    total_loss = 0.0
+    n_batches  = 0
+
+    pbar = tqdm(data_loader, desc=f"    Epoch {epoch}", leave=False)
+    for images, targets in pbar:
+        images  = [img.to(device) for img in images]
+        targets = [{k: v.to(device) for k, v in t.items()} for t in targets]
+
+        try:
+            loss_dict = model(images, targets)
+            losses    = sum(loss for loss in loss_dict.values())
+        except Exception as e:
+            # Skip bad batches (e.g. empty target after augmentation)
+            continue
+
+        optimizer.zero_grad()
+        losses.backward()
+        torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=10.0)
+        optimizer.step()
+
+        total_loss += losses.item()
+        n_batches  += 1
+        pbar.set_postfix({"loss": f"{losses.item():.4f}"})
+
+    avg_loss = total_loss / max(n_batches, 1)
+    return avg_loss
+
+
+@torch.no_grad()
+def evaluate(model, data_loader, device) -> dict:
+    """
+    Simple evaluation: compute average number of predictions per image
+    and average confidence score at multiple thresholds so we can see
+    early-training progress before predictions cross the 0.5 threshold.
+    """
+    model.eval()
+    total_preds_low  = 0   # threshold 0.3 - sensitive
+    total_preds_med  = 0   # threshold 0.5 - production
+    total_preds_high = 0   # threshold 0.7 - high precision
+    total_max_conf   = 0.0
+    n_images         = 0
+    n_with_preds     = 0
+
+    for images, targets in data_loader:
+        images = [img.to(device) for img in images]
+        outputs = model(images)
+        for out in outputs:
+            scores = out["scores"].cpu().numpy()
+            total_preds_low  += int((scores >= 0.3).sum())
+            total_preds_med  += int((scores >= 0.5).sum())
+            total_preds_high += int((scores >= 0.7).sum())
+            if len(scores) > 0:
+                total_max_conf += float(scores.max())
+                n_with_preds   += 1
+            n_images += 1
+
+    return {
+        "avg_predictions_per_image":  total_preds_med  / max(n_images, 1),
+        "preds_low_threshold":        total_preds_low  / max(n_images, 1),
+        "preds_high_threshold":       total_preds_high / max(n_images, 1),
+        "avg_confidence":             total_max_conf   / max(n_with_preds, 1),
+        "fraction_images_with_preds": n_with_preds     / max(n_images, 1),
+    }
+
+
+def save_training_curves(log: list[dict], out_path: Path):
+    """Save loss curves as a PNG for the thesis."""
+    epochs      = [e["epoch"] for e in log]
+    train_loss  = [e["train_loss"] for e in log]
+    avg_preds   = [e.get("val_avg_preds", 0) for e in log]
+
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 4))
+
+    ax1.plot(epochs, train_loss, "b-o", markersize=4, label="Train Loss")
+    ax1.set_xlabel("Epoch")
+    ax1.set_ylabel("Loss")
+    ax1.set_title("Training Loss")
+    ax1.legend()
+    ax1.grid(True, alpha=0.3)
+
+    ax2.plot(epochs, avg_preds, "g-o", markersize=4, label="Avg predictions/image")
+    ax2.set_xlabel("Epoch")
+    ax2.set_ylabel("Predictions")
+    ax2.set_title("Val: Avg Predictions per Image")
+    ax2.legend()
+    ax2.grid(True, alpha=0.3)
+
+    plt.tight_layout()
+    plt.savefig(str(out_path), dpi=150, bbox_inches="tight")
+    plt.close()
+
+
+def train(resume: bool = True):
+    print("\n" + "=" * 70)
+    print("  MILESTONE 2 — MASK R-CNN TRAINING")
+    print(f"  Device: {CONFIG['device'].upper()}")
+    if CONFIG["device"] == "cuda":
+        print(f"  GPU: {torch.cuda.get_device_name(0)}")
+        print(f"  VRAM: {torch.cuda.get_device_properties(0).total_memory / 1e9:.1f} GB")
+    print("=" * 70)
+
+    MODEL_DIR.mkdir(parents=True, exist_ok=True)
+    device = torch.device(CONFIG["device"])
+
+    # ── Datasets and loaders ───────────────────────────────────────────────
+    print("\n  Loading datasets...")
+    train_ds = CadastralDataset("train")
+    val_ds   = CadastralDataset("val")
+    print(f"  Train: {len(train_ds)} images")
+    print(f"  Val:   {len(val_ds)} images")
+
+    train_loader = torch.utils.data.DataLoader(
+        train_ds,
+        batch_size=CONFIG["batch_size"],
+        shuffle=True,
+        num_workers=CONFIG["num_workers"],
+        collate_fn=collate_fn,
+        pin_memory=False,  # must be False when num_workers=0
+    )
+    val_loader = torch.utils.data.DataLoader(
+        val_ds,
+        batch_size=1,
+        shuffle=False,
+        num_workers=CONFIG["num_workers"],
+        collate_fn=collate_fn,
+    )
+
+    # ── Model ──────────────────────────────────────────────────────────────
+    print("\n  Building Mask R-CNN (ResNet-50 FPN)...")
+    base_model = build_model(
+        num_classes=CONFIG["num_classes"],
+        pretrained=True
+    )
+    model = GrayscaleWrapper(base_model).to(device)
+    total_params = sum(p.numel() for p in model.parameters()) / 1e6
+    print(f"  Total parameters: {total_params:.1f} M")
+
+    # Resume from last checkpoint if available
+    last_ckpt = MODEL_DIR / "last_model.pth"
+    if resume and last_ckpt.exists():
+        print(f"\n  Resuming from {last_ckpt}")
+        model.load_state_dict(torch.load(str(last_ckpt), map_location=device))
+        print(f"  Loaded previous weights successfully")
+
+    # ── Phase 1: Train heads only (backbone frozen) ────────────────────────
+    print(f"\n  Phase 1: Training heads only (backbone frozen)")
+    print(f"  Epochs: {CONFIG['epochs_phase1']}  LR: {CONFIG['lr_phase1']}")
+    set_backbone_trainable(model, False)
+
+    params_phase1 = [p for p in model.parameters() if p.requires_grad]
+    optimizer = torch.optim.SGD(
+        params_phase1,
+        lr=CONFIG["lr_phase1"],
+        momentum=CONFIG["momentum"],
+        weight_decay=CONFIG["weight_decay"],
+    )
+    scheduler = torch.optim.lr_scheduler.StepLR(
+        optimizer,
+        step_size=CONFIG["lr_step_size"],
+        gamma=CONFIG["lr_gamma"],
+    )
+
+    training_log = []
+    best_val_preds = -1
+
+    total_epochs = CONFIG["epochs_phase1"] + CONFIG["epochs_phase2"]
+
+    for epoch in range(1, CONFIG["epochs_phase1"] + 1):
+        t0 = time.time()
+        train_loss = train_one_epoch(model, optimizer, train_loader, device, epoch)
+        val_metrics = evaluate(model, val_loader, device)
+        scheduler.step()
+
+        log_entry = {
+            "epoch":          epoch,
+            "phase":          1,
+            "train_loss":     round(train_loss, 6),
+            "val_avg_preds":  round(val_metrics["avg_predictions_per_image"], 2),
+            "val_avg_conf":   round(val_metrics["avg_confidence"], 4),
+            "lr":             round(optimizer.param_groups[0]["lr"], 8),
+            "elapsed_sec":    round(time.time() - t0, 1),
+        }
+        training_log.append(log_entry)
+
+        print(f"  Epoch {epoch:>3}/{total_epochs}  "
+              f"loss={train_loss:.4f}  "
+              f"val@0.5={val_metrics['avg_predictions_per_image']:.1f}  "
+              f"val@0.3={val_metrics['preds_low_threshold']:.1f}  "
+              f"max_conf={val_metrics['avg_confidence']:.3f}  "
+              f"img_w_preds={val_metrics['fraction_images_with_preds']*100:.0f}%  "
+              f"({time.time() - t0:.0f}s)")
+
+        # Save best model based on low-threshold predictions early on
+        save_metric = max(val_metrics["avg_predictions_per_image"],
+                          val_metrics["preds_low_threshold"] * 0.5)
+        if save_metric > best_val_preds:
+            best_val_preds = save_metric
+            torch.save(model.state_dict(), MODEL_DIR / "best_model.pth")
+        # Always save last checkpoint for resume
+        torch.save(model.state_dict(), MODEL_DIR / "last_model.pth")
+
+    # ── Phase 2: Full fine-tune (backbone unfrozen) ────────────────────────
+    print(f"\n  Phase 2: Full fine-tune (backbone unfrozen)")
+    print(f"  Epochs: {CONFIG['epochs_phase2']}  LR: {CONFIG['lr_phase2']}")
+    set_backbone_trainable(model, True)
+
+    optimizer = torch.optim.SGD(
+        model.parameters(),
+        lr=CONFIG["lr_phase2"],
+        momentum=CONFIG["momentum"],
+        weight_decay=CONFIG["weight_decay"],
+    )
+    scheduler = torch.optim.lr_scheduler.StepLR(
+        optimizer,
+        step_size=CONFIG["lr_step_size"],
+        gamma=CONFIG["lr_gamma"],
+    )
+
+    for epoch in range(CONFIG["epochs_phase1"] + 1, total_epochs + 1):
+        t0 = time.time()
+        train_loss  = train_one_epoch(model, optimizer, train_loader, device, epoch)
+        val_metrics = evaluate(model, val_loader, device)
+        scheduler.step()
+
+        log_entry = {
+            "epoch":          epoch,
+            "phase":          2,
+            "train_loss":     round(train_loss, 6),
+            "val_avg_preds":  round(val_metrics["avg_predictions_per_image"], 2),
+            "val_avg_conf":   round(val_metrics["avg_confidence"], 4),
+            "lr":             round(optimizer.param_groups[0]["lr"], 8),
+            "elapsed_sec":    round(time.time() - t0, 1),
+        }
+        training_log.append(log_entry)
+
+        print(f"  Epoch {epoch:>3}/{total_epochs}  "
+              f"loss={train_loss:.4f}  "
+              f"val@0.5={val_metrics['avg_predictions_per_image']:.1f}  "
+              f"val@0.3={val_metrics['preds_low_threshold']:.1f}  "
+              f"max_conf={val_metrics['avg_confidence']:.3f}  "
+              f"img_w_preds={val_metrics['fraction_images_with_preds']*100:.0f}%  "
+              f"({time.time() - t0:.0f}s)")
+
+        save_metric = max(val_metrics["avg_predictions_per_image"],
+                          val_metrics["preds_low_threshold"] * 0.5)
+        if save_metric > best_val_preds:
+            best_val_preds = save_metric
+            torch.save(model.state_dict(), MODEL_DIR / "best_model.pth")
+            print(f"  New best model saved")
+        # Always save last checkpoint for resume
+        torch.save(model.state_dict(), MODEL_DIR / "last_model.pth")
+
+    # Save final checkpoint and logs
+    torch.save(model.state_dict(), MODEL_DIR / "last_model.pth")
+    with open(MODEL_DIR / "training_log.json", "w") as f:
+        json.dump(training_log, f, indent=2)
+    save_training_curves(training_log, MODEL_DIR / "training_curves.png")
+
+    print("\n" + "=" * 70)
+    print("  TRAINING COMPLETE")
+    print("=" * 70)
+    print(f"  Best model: {MODEL_DIR / 'best_model.pth'}")
+    print(f"  Training curves: {MODEL_DIR / 'training_curves.png'}")
+    print(f"  Next: Run with --infer --all to detect parcels on all maps")
+    print("=" * 70 + "\n")
+
+
+# ---------------------------------------------------------------------------
+# INFERENCE
+# ---------------------------------------------------------------------------
+
+def load_model(checkpoint: str = "best_model.pth") -> GrayscaleWrapper:
+    """Load a trained model from checkpoint."""
+    ckpt_path = MODEL_DIR / checkpoint
+    if not ckpt_path.exists():
+        raise FileNotFoundError(
+            f"Checkpoint not found: {ckpt_path}\n"
+            f"Run with --train first."
+        )
+    base_model = build_model(num_classes=CONFIG["num_classes"], pretrained=False)
+    model      = GrayscaleWrapper(base_model)
+    model.load_state_dict(torch.load(str(ckpt_path),
+                                      map_location=CONFIG["device"]))
+    model.to(CONFIG["device"])
+    model.eval()
+    return model
+
+
+def infer_single(model: GrayscaleWrapper,
+                  image_path: Path) -> list[dict]:
+    """
+    Run Mask R-CNN inference on a single full-resolution map image.
+
+    Tiles the image into overlapping 512x512 crops, runs inference on
+    each, then merges predictions back into full-image coordinates.
+
+    Returns list of parcel dicts with: centroid, mask_bbox, area, score.
+    """
+    device = torch.device(CONFIG["device"])
+
+    data = np.fromfile(str(image_path), dtype=np.uint8)
+    img  = cv2.imdecode(data, cv2.IMREAD_GRAYSCALE)
+    if img is None:
+        raise FileNotFoundError(f"Cannot read: {image_path}")
+
+    h, w   = img.shape
+    cs     = 512
+    stride = 384   # overlap = 128px between tiles
+    parcels = []
+    parcel_id = 0
+
+    print(f"  Inferring on {image_path.name} ({w}x{h})...")
+
+    # Tile the image
+    for y in range(0, h, stride):
+        for x in range(0, w, stride):
+            y2 = min(y + cs, h)
+            x2 = min(x + cs, w)
+            crop = img[y:y2, x:x2]
+
+            # Pad if needed
+            if crop.shape[0] < cs or crop.shape[1] < cs:
+                crop = cv2.copyMakeBorder(
+                    crop, 0, cs - crop.shape[0], 0, cs - crop.shape[1],
+                    cv2.BORDER_CONSTANT, value=255
+                )
+
+            img_tensor = torch.from_numpy(
+                crop.astype(np.float32) / 255.0
+            ).unsqueeze(0).to(device)
+
+            with torch.no_grad():
+                outputs = model([img_tensor])
+            out = outputs[0]
+
+            scores = out["scores"].cpu().numpy()
+            boxes  = out["boxes"].cpu().numpy()
+            masks  = out["masks"].cpu().numpy()
+
+            for i, score in enumerate(scores):
+                if score < CONFIG["score_threshold"]:
+                    continue
+
+                bx1, by1, bx2, by2 = boxes[i]
+                # Map back to full image coordinates
+                gx1 = int(bx1) + x
+                gy1 = int(by1) + y
+                gx2 = int(bx2) + x
+                gy2 = int(by2) + y
+
+                # Clip to image bounds
+                gx1 = max(0, min(gx1, w - 1))
+                gy1 = max(0, min(gy1, h - 1))
+                gx2 = max(0, min(gx2, w - 1))
+                gy2 = max(0, min(gy2, h - 1))
+
+                bw = gx2 - gx1
+                bh = gy2 - gy1
+                if bw < 5 or bh < 5:
+                    continue
+
+                area = float(bw * bh)
+                if area < CONFIG["min_parcel_area"]:
+                    continue
+
+                cx = float(gx1 + bw / 2)
+                cy = float(gy1 + bh / 2)
+
+                # Extract a polygon from the Mask R-CNN mask. The mask is in
+                # tile-local coordinates at tile resolution; we threshold,
+                # find the largest contour, simplify it (Douglas-Peucker),
+                # and translate to global image coordinates.
+                polygon: list[list[int]] = []
+                mask_area_px = 0.0
+                try:
+                    m = masks[i, 0]   # [H_tile, W_tile] float in [0,1]
+                    binary = (m > 0.5).astype(np.uint8)
+                    contours, _ = cv2.findContours(
+                        binary, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE
+                    )
+                    if contours:
+                        largest = max(contours, key=cv2.contourArea)
+                        mask_area_px = float(cv2.contourArea(largest))
+                        # Simplify (~0.5% perimeter tolerance)
+                        eps = 0.005 * cv2.arcLength(largest, True)
+                        approx = cv2.approxPolyDP(largest, eps, True)
+                        # Translate from tile to global coords
+                        pts = approx.reshape(-1, 2) + np.array([x, y])
+                        # Clip to image bounds
+                        pts[:, 0] = np.clip(pts[:, 0], 0, w - 1)
+                        pts[:, 1] = np.clip(pts[:, 1], 0, h - 1)
+                        polygon = pts.astype(int).tolist()
+                except Exception:
+                    polygon = []
+
+                parcels.append({
+                    "parcel_id":   parcel_id,
+                    "cx":          round(cx, 2),
+                    "cy":          round(cy, 2),
+                    "bbox":        [gx1, gy1, bw, bh],
+                    "area_px":     round(area, 1),
+                    "mask_area_px": round(mask_area_px, 1),
+                    "polygon":     polygon,
+                    "confidence":  round(float(score), 4),
+                    "source_tile": [x, y],
+                })
+                parcel_id += 1
+
+    print(f"  Found {len(parcels)} parcels")
+    return parcels
+
+
+def save_prediction_overlay(image_path: Path,
+                              parcels: list[dict],
+                              out_path: Path):
+    """Save a colour-coded overlay of detected parcels."""
+    data = np.fromfile(str(image_path), dtype=np.uint8)
+    img  = cv2.imdecode(data, cv2.IMREAD_COLOR)
+    overlay = img.copy()
+
+    for p in parcels:
+        x, y, bw, bh = p["bbox"]
+        conf = p["confidence"]
+        # Color from green (high confidence) to orange (low confidence)
+        green = int(conf * 200)
+        blue  = int((1 - conf) * 200)
+        color = (blue, green, 50)
+        cv2.rectangle(overlay, (x, y), (x + bw, y + bh), color, 2)
+        cv2.circle(overlay, (int(p["cx"]), int(p["cy"])), 4, color, -1)
+
+    result = cv2.addWeighted(img, 0.6, overlay, 0.4, 0)
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    ok, enc = cv2.imencode(".png", result)
+    if ok:
+        enc.tofile(str(out_path))
+
+
+def infer_all(maps: list[str] | None = None):
+    """Run inference on the specified maps (or all 13) and save results."""
+    target_maps = maps if maps else ALL_MAPS
+    print(f"\n  Running inference on maps: {', '.join(target_maps)}")
+    model = load_model("best_model.pth")
+    PRED_DIR.mkdir(parents=True, exist_ok=True)
+
+    results = {}
+    for map_num in target_maps:
+        img_path = PREPROCESSED_DIR / f"map_{map_num}_clean.png"
+        if not img_path.exists():
+            print(f"  Skipping map {map_num} (not found)")
+            continue
+
+        parcels = infer_single(model, img_path)
+
+        # Save JSON (same format as Step 5 / annotation tool)
+        json_path = PRED_DIR / f"map_{map_num}_parcels.json"
+        with open(json_path, "w", encoding="utf-8") as f:
+            json.dump(parcels, f, indent=2)
+
+        # Save overlay
+        overlay_path = PRED_DIR / f"map_{map_num}_overlay.png"
+        save_prediction_overlay(img_path, parcels, overlay_path)
+
+        results[map_num] = len(parcels)
+        print(f"  Map {map_num}: {len(parcels)} parcels detected")
+
+    # Summary
+    print("\n  Inference complete:")
+    for k, v in results.items():
+        print(f"    Map {k}: {v} parcels")
+    print(f"\n  Predictions saved to: {PRED_DIR.resolve()}")
+    print("  Next: Run step5_graph.py to build parcel adjacency graphs")
+
+
+# ---------------------------------------------------------------------------
+# ENTRY POINT
+# ---------------------------------------------------------------------------
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(
+        description="Mask R-CNN parcel segmentation — train and infer"
+    )
+    parser.add_argument("--train",  action="store_true", help="Train the model")
+    parser.add_argument("--eval",   action="store_true", help="Evaluate on test set")
+    parser.add_argument("--infer",  action="store_true", help="Run inference")
+    parser.add_argument("--all",    action="store_true", help="Infer on all maps")
+    parser.add_argument("--image",  type=str, default=None,
+                        help="Path to single image for inference")
+    parser.add_argument("--maps",   nargs="+", default=None,
+                        help="Specific map numbers to infer (saves JSON), "
+                             "e.g. --infer --maps 45 47")
+    parser.add_argument("--checkpoint", type=str, default="best_model.pth",
+                        help="Model checkpoint filename")
+    args = parser.parse_args()
+
+    if args.train:
+        train()
+    elif args.infer:
+        if args.maps:
+            infer_all(maps=args.maps)
+        elif args.all:
+            infer_all()
+        elif args.image:
+            model   = load_model(args.checkpoint)
+            parcels = infer_single(model, Path(args.image))
+            print(json.dumps(parcels[:5], indent=2))
+        else:
+            print("ERROR: --infer needs --all or --image <path>")
+    elif args.eval:
+        print("Full mAP evaluation coming in Milestone 7 (quality assessment)")
+    else:
+        print("Usage:")
+        print("  python step4_segmentation.py --train")
+        print("  python step4_segmentation.py --infer --all")
+        print("  python step4_segmentation.py --infer --image output/preprocessed/map_45_clean.png")

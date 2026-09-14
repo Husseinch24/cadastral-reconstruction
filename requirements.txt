@@ -1,0 +1,30 @@
+# ── Old pipeline (Steps 1-6) ───────────────────────────────────────────────
+numpy>=2.4.0
+opencv-python>=4.13.0
+matplotlib>=3.10.0
+scikit-image>=0.26.0
+Pillow>=12.0.0
+pytesseract>=0.3.13
+easyocr>=1.7.2
+
+# ── New pipeline (Steps 4-10 NEW) ─────────────────────────────────────────
+scipy>=1.17.0
+scikit-learn>=1.8.0
+networkx>=3.6.0
+albumentations>=2.0.0
+pandas>=3.0.0
+h5py>=3.16.0
+pyyaml>=6.0.0
+omegaconf>=2.3.0
+pycocotools>=2.0.11
+plotly>=6.0.0
+seaborn>=0.13.0
+tqdm>=4.65.0
+loguru>=0.7.0
+jupyter>=1.1.0
+ipykernel>=7.0.0
+pytest>=9.0.0
+torch>=2.0.0
+torch_geometric>=2.3.0
+torch-scatter
+torch-sparse
