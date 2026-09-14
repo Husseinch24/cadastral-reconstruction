@@ -1,0 +1,41 @@
+# Virtual environment
+venv_thesis/
+venv/
+.env
+
+# Map images — restricted cadastral data
+output/preprocessed/
+output/panorama/
+output/homographies/
+output/edges/
+output/matches/
+
+# Generated data — derived from restricted maps
+new_pipeline/data/synthetic/
+new_pipeline/data/predictions/
+new_pipeline/data/graphs/
+new_pipeline/data/orientation_results/
+new_pipeline/data/click_matches/
+new_pipeline/data/matches/
+
+# Trained model weights
+new_pipeline/models/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Large files
+*.png
+*.jpg
+*.jpeg
+*.npy
+*.pth
+*.pt
+
+# System files
+.DS_Store
+Thumbs.db
