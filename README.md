@@ -226,12 +226,3 @@ This is research software, not a cadastral production system. Results must be
 reviewed by a qualified human before being used for surveying, legal, or land
 ownership decisions. Performance depends on scan quality, map adjacency, and
 the availability of valid homographies or parcel correspondences.
-
-## Citation
-
-If you use this code or build on the method, please cite the associated thesis:
-
-```text
-Chalhoub, Hussein. AI-Based Panoramic Reconstruction of Cadastral Maps.
-Master's thesis, Universite Saint-Joseph de Beyrouth, 2026.
-```
